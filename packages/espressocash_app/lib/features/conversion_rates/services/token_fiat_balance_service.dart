@@ -92,6 +92,14 @@ class TokenFiatBalanceService {
           )
           .distinct();
 
+  Stream<CryptoFiatAmount> readInvestmentBalance(Token token) =>
+      _balancesRepository.watch(token).flatMap(
+            (amount) => Rx.combineLatest(
+              [watch(amount.token).map((fiat) => (amount, fiat))],
+              (values) => values.map((e) => (e.$1, e.$2 ?? _zeroFiat)).first,
+            ),
+          );
+
   void _logTotalCryptoBalance(Amount total) =>
       _analyticsManager.setTotalInvestmentsBalance(total.decimal);
 }

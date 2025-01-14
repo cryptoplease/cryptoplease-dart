@@ -11,6 +11,7 @@ import '../../../ui/value_stream_builder.dart';
 import '../../conversion_rates/services/token_fiat_balance_service.dart';
 import '../../conversion_rates/widgets/extensions.dart';
 import '../../currency/models/amount.dart';
+import '../../token_details/screens/token_details_screen.dart';
 import '../../tokens/widgets/token_icon.dart';
 
 class PortfolioWidget extends StatefulWidget {
@@ -146,7 +147,7 @@ class _TokenItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final String fiatAmountText =
-        context.portfilioTotalAmountText(fiatAmount, _minFiatAmount);
+        context.portfolioTotalAmountText(fiatAmount, _minFiatAmount);
 
     return _Card(
       child: ListTile(
@@ -158,6 +159,8 @@ class _TokenItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(_iconSize / 2),
           child: TokenIcon(token: cryptoAmount.token, size: _iconSize),
         ),
+        onTap: () =>
+            TokenDetailsScreen.push(context, token: cryptoAmount.token),
         title: Text(
           cryptoAmount.token.name,
           style: const TextStyle(
@@ -214,7 +217,7 @@ class _Card extends StatelessWidget {
 }
 
 extension TotalPortfolioTextExtension on BuildContext {
-  String portfilioTotalAmountText(FiatAmount? fiatAmount, num minFiatAmount) {
+  String portfolioTotalAmountText(FiatAmount? fiatAmount, num minFiatAmount) {
     if (fiatAmount != null) {
       if (fiatAmount.value < minFiatAmount) {
         return r'<$0.01';

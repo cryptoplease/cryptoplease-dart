@@ -12,6 +12,7 @@ class CpActivityTile extends StatelessWidget {
     required this.icon,
     required this.status,
     required this.timestamp,
+    this.subtitle,
     this.incomingAmount,
     this.outgoingAmount,
     this.onTap,
@@ -22,6 +23,7 @@ class CpActivityTile extends StatelessWidget {
   final Widget icon;
   final String timestamp;
   final CpActivityTileStatus status;
+  final String? subtitle;
   final String? incomingAmount;
   final String? outgoingAmount;
   final VoidCallback? onTap;

@@ -2,6 +2,7 @@ import 'package:drift/drift.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../features/activities/models/transaction.dart';
+import '../../features/currency/models/currency.dart';
 import '../../features/incoming_link_payments/data/ilp_repository.dart';
 import '../../features/outgoing_direct_payments/data/repository.dart';
 import '../../features/outgoing_link_payments/data/repository.dart';
@@ -24,7 +25,7 @@ class OutgoingTransferRows extends Table {
   Set<Column<Object>> get primaryKey => {id};
 }
 
-const int latestVersion = 60;
+const int latestVersion = 61;
 
 const _tables = [
   OutgoingTransferRows,
@@ -117,11 +118,9 @@ class MyDatabase extends _$MyDatabase {
           if (from < 51) {
             await m.addColumn(transactionRows, transactionRows.amount);
           }
-
           if (from < 52) {
             await m.createTable(tokenBalanceRows);
           }
-
           if (from < 53) {
             await m.addColumn(onRampOrderRows, onRampOrderRows.authToken);
             await m.addColumn(onRampOrderRows, onRampOrderRows.moreInfoUrl);
@@ -170,6 +169,14 @@ class MyDatabase extends _$MyDatabase {
           }
           if (from >= 39 && from < 60) {
             await m.addColumn(iLPRows, iLPRows.receiveAmount);
+          }
+          if (from < 61) {
+            await m.addColumn(transactionRows, transactionRows.token);
+
+            await customStatement(
+              'UPDATE ${transactionRows.actualTableName} SET token = ?',
+              [Currency.usdc.token.address],
+            );
           }
         },
       );
@@ -306,6 +313,7 @@ class TransactionRows extends Table {
   TextColumn get encodedTx => text()();
   IntColumn get status => intEnum<TxCommonStatus>()();
   IntColumn get amount => integer().nullable()();
+  TextColumn get token => text().nullable()();
 
   @override
   Set<Column<Object>> get primaryKey => {id};

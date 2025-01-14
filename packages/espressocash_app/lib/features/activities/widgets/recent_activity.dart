@@ -8,7 +8,6 @@ import '../../../ui/colors.dart';
 import '../../../ui/home_tile.dart';
 import '../../../ui/theme.dart';
 import '../data/transaction_repository.dart';
-import '../services/tx_updater.dart';
 import 'transaction_item.dart';
 
 class RecentActivityWidget extends StatefulWidget {
@@ -34,7 +33,6 @@ class _RecentActivityWidgetState extends State<RecentActivityWidget> {
   void initState() {
     super.initState();
     _txs = sl<TransactionRepository>().watchCount(_activityCount);
-    sl<TxUpdater>().call();
   }
 
   @override

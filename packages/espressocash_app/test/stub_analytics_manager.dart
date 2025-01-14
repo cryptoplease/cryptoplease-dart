@@ -6,7 +6,7 @@ class StubAnalyticsManager implements AnalyticsManager {
   const StubAnalyticsManager();
 
   @override
-  void directPaymentSent({required Decimal amount}) {}
+  void directPaymentSent({required String symbol, required Decimal amount}) {}
 
   @override
   void setProfileCountryCode(String countryCode) {}

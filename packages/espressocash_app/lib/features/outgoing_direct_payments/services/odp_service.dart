@@ -168,7 +168,10 @@ class ODPService {
     );
 
     if (newStatus is ODPStatusSuccess) {
-      _analyticsManager.directPaymentSent(amount: payment.amount.decimal);
+      _analyticsManager.directPaymentSent(
+        symbol: payment.amount.token.symbol,
+        amount: payment.amount.decimal,
+      );
     }
 
     return newStatus == null ? payment : payment.copyWith(status: newStatus);

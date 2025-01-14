@@ -150,3 +150,7 @@ class _UsdcDevToken extends SplToken {
           isStablecoin: true,
         );
 }
+
+extension TokenUtils on Token {
+  bool get isUsdcToken => address == Token.usdc.address;
+}
