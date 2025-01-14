@@ -48,10 +48,11 @@ class BalancesBloc extends Bloc<BalancesEvent, BalancesState>
   ) async {
     try {
       emit(const ProcessingState.processing());
+      final address = event.address;
 
-      final sol = await _solanaClient.getSolBalance(event.address);
+      final sol = await _solanaClient.getSolBalance(address);
 
-      final allAccounts = await _solanaClient.getSplAccounts(event.address);
+      final allAccounts = await _solanaClient.getSplAccounts(address);
       final mainAccounts = await Future.wait<_MainTokenAccount?>(
         allAccounts.map((programAccount) async {
           final account = programAccount.account;
@@ -63,6 +64,16 @@ class BalancesBloc extends Bloc<BalancesEvent, BalancesState>
                 account: (a) => _MainTokenAccount.create(
                   programAccount.pubkey,
                   a.info,
+                  TokenProgramType.tokenProgram,
+                  _tokenRepository,
+                ),
+                orElse: () async => null,
+              ),
+              token2022: (parsed) => parsed.maybeMap(
+                account: (a) => _MainTokenAccount.create(
+                  programAccount.pubkey,
+                  a.info,
+                  TokenProgramType.token2022Program,
                   _tokenRepository,
                 ),
                 orElse: () async => null,
@@ -110,11 +121,13 @@ class _MainTokenAccount {
   static Future<_MainTokenAccount?> create(
     String pubKey,
     SplTokenAccountDataInfo info,
+    TokenProgramType tokenProgramType,
     TokenRepository tokenRepository,
   ) async {
     final expectedPubKey = await findAssociatedTokenAddress(
       owner: Ed25519HDPublicKey.fromBase58(info.owner),
       mint: Ed25519HDPublicKey.fromBase58(info.mint),
+      tokenProgramType: tokenProgramType,
     );
 
     if (expectedPubKey.toBase58() != pubKey) return null;
@@ -154,12 +167,24 @@ extension on SolanaClient {
     return CryptoAmount(value: lamports, cryptoCurrency: Currency.sol);
   }
 
-  Future<Iterable<ProgramAccount>> getSplAccounts(String address) => rpcClient
-      .getTokenAccountsByOwner(
+  Future<Iterable<ProgramAccount>> getSplAccounts(String address) async {
+    final accounts = [
+      rpcClient.getTokenAccountsByOwner(
         address,
         const TokenAccountsFilter.byProgramId(TokenProgram.programId),
         commitment: Commitment.confirmed,
         encoding: Encoding.jsonParsed,
-      )
-      .value;
+      ),
+      rpcClient.getTokenAccountsByOwner(
+        address,
+        const TokenAccountsFilter.byProgramId(Token2022Program.programId),
+        commitment: Commitment.confirmed,
+        encoding: Encoding.jsonParsed,
+      ),
+    ];
+
+    final results = await Future.wait(accounts);
+
+    return [...results[0].value, ...results[1].value];
+  }
 }
