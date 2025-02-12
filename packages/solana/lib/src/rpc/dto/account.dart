@@ -36,7 +36,7 @@ class Account {
   final bool executable;
 
   /// The epoch at which this account will next owe rent, as u64
-  @JsonKey(fromJson: bigIntFromNum)
+  @JsonKey(fromJson: bigIntFromJson)
   final BigInt rentEpoch;
 
   Map<String, dynamic> toJson() => _$AccountToJson(this);

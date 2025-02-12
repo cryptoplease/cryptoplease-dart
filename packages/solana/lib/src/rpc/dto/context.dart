@@ -23,7 +23,7 @@ class Context {
   factory Context.fromJson(Map<String, dynamic> json) =>
       _$ContextFromJson(json);
 
-  @JsonKey(fromJson: bigIntFromNum)
+  @JsonKey(fromJson: bigIntFromJson)
   BigInt slot;
 
   Map<String, dynamic> toJson() => _$ContextToJson(this);

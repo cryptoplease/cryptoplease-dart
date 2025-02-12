@@ -7,7 +7,7 @@ part of 'context.dart';
 // **************************************************************************
 
 Context _$ContextFromJson(Map<String, dynamic> json) => Context(
-      slot: bigIntFromNum(json['slot'] as num),
+      slot: bigIntFromJson(json['slot'] as Object),
     );
 
 Map<String, dynamic> _$ContextToJson(Context instance) => <String, dynamic>{
