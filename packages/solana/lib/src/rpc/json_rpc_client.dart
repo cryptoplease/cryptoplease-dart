@@ -1,10 +1,9 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 
-import 'package:http/http.dart';
 import 'package:solana/src/exceptions/http_exception.dart';
 import 'package:solana/src/exceptions/json_rpc_exception.dart';
-import 'package:solana/src/exceptions/rpc_timeout_exception.dart';
 import 'package:solana/src/rpc/json_rpc_request.dart';
 
 class JsonRpcClient {
@@ -12,12 +11,15 @@ class JsonRpcClient {
     this._url, {
     required Duration timeout,
     required Map<String, String> customHeaders,
+    HttpClient? httpClient, // Optional client for proxy support.
   })  : _timeout = timeout,
-        _headers = {..._defaultHeaders, ...customHeaders};
+        _headers = {..._defaultHeaders, ...customHeaders},
+        _httpClient = httpClient ?? HttpClient();
 
   final String _url;
   final Duration _timeout;
   final Map<String, String> _headers;
+  final HttpClient _httpClient;
   int _lastId = 1;
 
   Future<List<Map<String, dynamic>>> bulkRequest(
@@ -65,29 +67,23 @@ class JsonRpcClient {
     throw const FormatException('unexpected jsonrpc response type');
   }
 
+  /// Sends a POST request to the server.
   Future<_JsonRpcResponse> _postRequest(
     JsonRpcRequest request,
   ) async {
     final body = request.toJson();
     // Perform the POST request
-    final Response response = await post(
-      Uri.parse(_url),
-      headers: _headers,
-      body: json.encode(body),
-    ).timeout(
-      _timeout,
-      onTimeout: () => throw RpcTimeoutException(
-        method: request.method,
-        body: body,
-        timeout: _timeout,
-      ),
-    );
+    final HttpClientRequest httpRequest =
+        await _httpClient.postUrl(Uri.parse(_url));
+    _headers.forEach((key, value) => httpRequest.headers.add(key, value));
+    httpRequest.write(json.encode(body));
     // Handle the response
-    if (response.statusCode == 200) {
-      return _JsonRpcResponse._parse(json.decode(response.body));
+    final HttpClientResponse httpResponse = await httpRequest.close();
+    final responseBody = await httpResponse.transform(utf8.decoder).join();
+    if (httpResponse.statusCode == 200) {
+      return _JsonRpcResponse._parse(json.decode(responseBody));
     }
-
-    throw HttpException(response.statusCode, response.body);
+    throw HttpException(httpResponse.statusCode, responseBody);
   }
 }
 
