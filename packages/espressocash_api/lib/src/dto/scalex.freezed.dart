@@ -559,6 +559,8 @@ mixin _$OrderStatusScalexResponseDto {
   @JsonKey(unknownEnumValue: ScalexOrderStatus.unknown)
   ScalexOrderStatus get status => throw _privateConstructorUsedError;
   OnRampScalexDetails? get onRampDetails => throw _privateConstructorUsedError;
+  OffRampScalexDetails? get offRampDetails =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -577,9 +579,11 @@ abstract class $OrderStatusScalexResponseDtoCopyWith<$Res> {
   $Res call(
       {@JsonKey(unknownEnumValue: ScalexOrderStatus.unknown)
       ScalexOrderStatus status,
-      OnRampScalexDetails? onRampDetails});
+      OnRampScalexDetails? onRampDetails,
+      OffRampScalexDetails? offRampDetails});
 
   $OnRampScalexDetailsCopyWith<$Res>? get onRampDetails;
+  $OffRampScalexDetailsCopyWith<$Res>? get offRampDetails;
 }
 
 /// @nodoc
@@ -598,6 +602,7 @@ class _$OrderStatusScalexResponseDtoCopyWithImpl<$Res,
   $Res call({
     Object? status = null,
     Object? onRampDetails = freezed,
+    Object? offRampDetails = freezed,
   }) {
     return _then(_value.copyWith(
       status: null == status
@@ -608,6 +613,10 @@ class _$OrderStatusScalexResponseDtoCopyWithImpl<$Res,
           ? _value.onRampDetails
           : onRampDetails // ignore: cast_nullable_to_non_nullable
               as OnRampScalexDetails?,
+      offRampDetails: freezed == offRampDetails
+          ? _value.offRampDetails
+          : offRampDetails // ignore: cast_nullable_to_non_nullable
+              as OffRampScalexDetails?,
     ) as $Val);
   }
 
@@ -620,6 +629,18 @@ class _$OrderStatusScalexResponseDtoCopyWithImpl<$Res,
 
     return $OnRampScalexDetailsCopyWith<$Res>(_value.onRampDetails!, (value) {
       return _then(_value.copyWith(onRampDetails: value) as $Val);
+    });
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $OffRampScalexDetailsCopyWith<$Res>? get offRampDetails {
+    if (_value.offRampDetails == null) {
+      return null;
+    }
+
+    return $OffRampScalexDetailsCopyWith<$Res>(_value.offRampDetails!, (value) {
+      return _then(_value.copyWith(offRampDetails: value) as $Val);
     });
   }
 }
@@ -636,10 +657,13 @@ abstract class _$$OrderStatusScalexResponseDtoImplCopyWith<$Res>
   $Res call(
       {@JsonKey(unknownEnumValue: ScalexOrderStatus.unknown)
       ScalexOrderStatus status,
-      OnRampScalexDetails? onRampDetails});
+      OnRampScalexDetails? onRampDetails,
+      OffRampScalexDetails? offRampDetails});
 
   @override
   $OnRampScalexDetailsCopyWith<$Res>? get onRampDetails;
+  @override
+  $OffRampScalexDetailsCopyWith<$Res>? get offRampDetails;
 }
 
 /// @nodoc
@@ -657,6 +681,7 @@ class __$$OrderStatusScalexResponseDtoImplCopyWithImpl<$Res>
   $Res call({
     Object? status = null,
     Object? onRampDetails = freezed,
+    Object? offRampDetails = freezed,
   }) {
     return _then(_$OrderStatusScalexResponseDtoImpl(
       status: null == status
@@ -667,6 +692,10 @@ class __$$OrderStatusScalexResponseDtoImplCopyWithImpl<$Res>
           ? _value.onRampDetails
           : onRampDetails // ignore: cast_nullable_to_non_nullable
               as OnRampScalexDetails?,
+      offRampDetails: freezed == offRampDetails
+          ? _value.offRampDetails
+          : offRampDetails // ignore: cast_nullable_to_non_nullable
+              as OffRampScalexDetails?,
     ));
   }
 }
@@ -678,7 +707,8 @@ class _$OrderStatusScalexResponseDtoImpl
   const _$OrderStatusScalexResponseDtoImpl(
       {@JsonKey(unknownEnumValue: ScalexOrderStatus.unknown)
       required this.status,
-      this.onRampDetails});
+      this.onRampDetails,
+      this.offRampDetails});
 
   factory _$OrderStatusScalexResponseDtoImpl.fromJson(
           Map<String, dynamic> json) =>
@@ -689,10 +719,12 @@ class _$OrderStatusScalexResponseDtoImpl
   final ScalexOrderStatus status;
   @override
   final OnRampScalexDetails? onRampDetails;
+  @override
+  final OffRampScalexDetails? offRampDetails;
 
   @override
   String toString() {
-    return 'OrderStatusScalexResponseDto(status: $status, onRampDetails: $onRampDetails)';
+    return 'OrderStatusScalexResponseDto(status: $status, onRampDetails: $onRampDetails, offRampDetails: $offRampDetails)';
   }
 
   @override
@@ -702,12 +734,15 @@ class _$OrderStatusScalexResponseDtoImpl
             other is _$OrderStatusScalexResponseDtoImpl &&
             (identical(other.status, status) || other.status == status) &&
             (identical(other.onRampDetails, onRampDetails) ||
-                other.onRampDetails == onRampDetails));
+                other.onRampDetails == onRampDetails) &&
+            (identical(other.offRampDetails, offRampDetails) ||
+                other.offRampDetails == offRampDetails));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, status, onRampDetails);
+  int get hashCode =>
+      Object.hash(runtimeType, status, onRampDetails, offRampDetails);
 
   @JsonKey(ignore: true)
   @override
@@ -730,7 +765,8 @@ abstract class _OrderStatusScalexResponseDto
   const factory _OrderStatusScalexResponseDto(
           {@JsonKey(unknownEnumValue: ScalexOrderStatus.unknown)
           required final ScalexOrderStatus status,
-          final OnRampScalexDetails? onRampDetails}) =
+          final OnRampScalexDetails? onRampDetails,
+          final OffRampScalexDetails? offRampDetails}) =
       _$OrderStatusScalexResponseDtoImpl;
 
   factory _OrderStatusScalexResponseDto.fromJson(Map<String, dynamic> json) =
@@ -741,6 +777,8 @@ abstract class _OrderStatusScalexResponseDto
   ScalexOrderStatus get status;
   @override
   OnRampScalexDetails? get onRampDetails;
+  @override
+  OffRampScalexDetails? get offRampDetails;
   @override
   @JsonKey(ignore: true)
   _$$OrderStatusScalexResponseDtoImplCopyWith<
@@ -1315,6 +1353,165 @@ abstract class _OnRampScalexDetails implements OnRampScalexDetails {
   @JsonKey(ignore: true)
   _$$OnRampScalexDetailsImplCopyWith<_$OnRampScalexDetailsImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+OffRampScalexDetails _$OffRampScalexDetailsFromJson(Map<String, dynamic> json) {
+  return _OffRampScalexDetails.fromJson(json);
+}
+
+/// @nodoc
+mixin _$OffRampScalexDetails {
+  String get depositAddress => throw _privateConstructorUsedError;
+  int get amount => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $OffRampScalexDetailsCopyWith<OffRampScalexDetails> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $OffRampScalexDetailsCopyWith<$Res> {
+  factory $OffRampScalexDetailsCopyWith(OffRampScalexDetails value,
+          $Res Function(OffRampScalexDetails) then) =
+      _$OffRampScalexDetailsCopyWithImpl<$Res, OffRampScalexDetails>;
+  @useResult
+  $Res call({String depositAddress, int amount});
+}
+
+/// @nodoc
+class _$OffRampScalexDetailsCopyWithImpl<$Res,
+        $Val extends OffRampScalexDetails>
+    implements $OffRampScalexDetailsCopyWith<$Res> {
+  _$OffRampScalexDetailsCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? depositAddress = null,
+    Object? amount = null,
+  }) {
+    return _then(_value.copyWith(
+      depositAddress: null == depositAddress
+          ? _value.depositAddress
+          : depositAddress // ignore: cast_nullable_to_non_nullable
+              as String,
+      amount: null == amount
+          ? _value.amount
+          : amount // ignore: cast_nullable_to_non_nullable
+              as int,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$OffRampScalexDetailsImplCopyWith<$Res>
+    implements $OffRampScalexDetailsCopyWith<$Res> {
+  factory _$$OffRampScalexDetailsImplCopyWith(_$OffRampScalexDetailsImpl value,
+          $Res Function(_$OffRampScalexDetailsImpl) then) =
+      __$$OffRampScalexDetailsImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({String depositAddress, int amount});
+}
+
+/// @nodoc
+class __$$OffRampScalexDetailsImplCopyWithImpl<$Res>
+    extends _$OffRampScalexDetailsCopyWithImpl<$Res, _$OffRampScalexDetailsImpl>
+    implements _$$OffRampScalexDetailsImplCopyWith<$Res> {
+  __$$OffRampScalexDetailsImplCopyWithImpl(_$OffRampScalexDetailsImpl _value,
+      $Res Function(_$OffRampScalexDetailsImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? depositAddress = null,
+    Object? amount = null,
+  }) {
+    return _then(_$OffRampScalexDetailsImpl(
+      depositAddress: null == depositAddress
+          ? _value.depositAddress
+          : depositAddress // ignore: cast_nullable_to_non_nullable
+              as String,
+      amount: null == amount
+          ? _value.amount
+          : amount // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$OffRampScalexDetailsImpl implements _OffRampScalexDetails {
+  const _$OffRampScalexDetailsImpl(
+      {required this.depositAddress, required this.amount});
+
+  factory _$OffRampScalexDetailsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$OffRampScalexDetailsImplFromJson(json);
+
+  @override
+  final String depositAddress;
+  @override
+  final int amount;
+
+  @override
+  String toString() {
+    return 'OffRampScalexDetails(depositAddress: $depositAddress, amount: $amount)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$OffRampScalexDetailsImpl &&
+            (identical(other.depositAddress, depositAddress) ||
+                other.depositAddress == depositAddress) &&
+            (identical(other.amount, amount) || other.amount == amount));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(runtimeType, depositAddress, amount);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$OffRampScalexDetailsImplCopyWith<_$OffRampScalexDetailsImpl>
+      get copyWith =>
+          __$$OffRampScalexDetailsImplCopyWithImpl<_$OffRampScalexDetailsImpl>(
+              this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$OffRampScalexDetailsImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _OffRampScalexDetails implements OffRampScalexDetails {
+  const factory _OffRampScalexDetails(
+      {required final String depositAddress,
+      required final int amount}) = _$OffRampScalexDetailsImpl;
+
+  factory _OffRampScalexDetails.fromJson(Map<String, dynamic> json) =
+      _$OffRampScalexDetailsImpl.fromJson;
+
+  @override
+  String get depositAddress;
+  @override
+  int get amount;
+  @override
+  @JsonKey(ignore: true)
+  _$$OffRampScalexDetailsImplCopyWith<_$OffRampScalexDetailsImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 ScalexRateFeeResponseDto _$ScalexRateFeeResponseDtoFromJson(

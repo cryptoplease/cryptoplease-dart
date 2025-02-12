@@ -59,6 +59,10 @@ _$OrderStatusScalexResponseDtoImpl _$$OrderStatusScalexResponseDtoImplFromJson(
           ? null
           : OnRampScalexDetails.fromJson(
               json['onRampDetails'] as Map<String, dynamic>),
+      offRampDetails: json['offRampDetails'] == null
+          ? null
+          : OffRampScalexDetails.fromJson(
+              json['offRampDetails'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$OrderStatusScalexResponseDtoImplToJson(
@@ -66,6 +70,7 @@ Map<String, dynamic> _$$OrderStatusScalexResponseDtoImplToJson(
     <String, dynamic>{
       'status': _$ScalexOrderStatusEnumMap[instance.status]!,
       'onRampDetails': instance.onRampDetails,
+      'offRampDetails': instance.offRampDetails,
     };
 
 const _$ScalexOrderStatusEnumMap = {
@@ -129,6 +134,20 @@ Map<String, dynamic> _$$OnRampScalexDetailsImplToJson(
       'bankAccount': instance.bankAccount,
       'fromAmount': instance.fromAmount,
       'fiatCurrency': instance.fiatCurrency,
+    };
+
+_$OffRampScalexDetailsImpl _$$OffRampScalexDetailsImplFromJson(
+        Map<String, dynamic> json) =>
+    _$OffRampScalexDetailsImpl(
+      depositAddress: json['depositAddress'] as String,
+      amount: (json['amount'] as num).toInt(),
+    );
+
+Map<String, dynamic> _$$OffRampScalexDetailsImplToJson(
+        _$OffRampScalexDetailsImpl instance) =>
+    <String, dynamic>{
+      'depositAddress': instance.depositAddress,
+      'amount': instance.amount,
     };
 
 _$ScalexRateFeeResponseDtoImpl _$$ScalexRateFeeResponseDtoImplFromJson(

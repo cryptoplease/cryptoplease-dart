@@ -46,6 +46,7 @@ class OrderStatusScalexResponseDto with _$OrderStatusScalexResponseDto {
     @JsonKey(unknownEnumValue: ScalexOrderStatus.unknown)
     required ScalexOrderStatus status,
     OnRampScalexDetails? onRampDetails,
+    OffRampScalexDetails? offRampDetails,
   }) = _OrderStatusScalexResponseDto;
 
   factory OrderStatusScalexResponseDto.fromJson(Map<String, dynamic> json) =>
@@ -87,6 +88,17 @@ class OnRampScalexDetails with _$OnRampScalexDetails {
 
   factory OnRampScalexDetails.fromJson(Map<String, dynamic> json) =>
       _$OnRampScalexDetailsFromJson(json);
+}
+
+@freezed
+class OffRampScalexDetails with _$OffRampScalexDetails {
+  const factory OffRampScalexDetails({
+    required String depositAddress,
+    required int amount,
+  }) = _OffRampScalexDetails;
+
+  factory OffRampScalexDetails.fromJson(Map<String, dynamic> json) =>
+      _$OffRampScalexDetailsFromJson(json);
 }
 
 @freezed
