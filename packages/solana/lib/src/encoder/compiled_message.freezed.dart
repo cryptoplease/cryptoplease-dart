@@ -12,7 +12,7 @@ part of 'compiled_message.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$CompiledMessage {
@@ -91,7 +91,9 @@ mixin _$CompiledMessage {
   }) =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CompiledMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CompiledMessageCopyWith<CompiledMessage> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -121,6 +123,8 @@ class _$CompiledMessageCopyWithImpl<$Res, $Val extends CompiledMessage>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CompiledMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -149,6 +153,8 @@ class _$CompiledMessageCopyWithImpl<$Res, $Val extends CompiledMessage>
     ) as $Val);
   }
 
+  /// Create a copy of CompiledMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MessageHeaderCopyWith<$Res> get header {
@@ -185,6 +191,8 @@ class __$$CompiledMessageLegacyImplCopyWithImpl<$Res>
       $Res Function(_$CompiledMessageLegacyImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CompiledMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -273,7 +281,9 @@ class _$CompiledMessageLegacyImpl extends CompiledMessageLegacy {
       recentBlockhash,
       const DeepCollectionEquality().hash(_instructions));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CompiledMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CompiledMessageLegacyImplCopyWith<_$CompiledMessageLegacyImpl>
@@ -390,8 +400,11 @@ abstract class CompiledMessageLegacy extends CompiledMessage {
   String get recentBlockhash;
   @override
   List<CompiledInstruction> get instructions;
+
+  /// Create a copy of CompiledMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CompiledMessageLegacyImplCopyWith<_$CompiledMessageLegacyImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -423,6 +436,8 @@ class __$$CompiledMessageV0ImplCopyWithImpl<$Res>
       $Res Function(_$CompiledMessageV0Impl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CompiledMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -530,7 +545,9 @@ class _$CompiledMessageV0Impl extends CompiledMessageV0 {
       const DeepCollectionEquality().hash(_instructions),
       const DeepCollectionEquality().hash(_addressTableLookups));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CompiledMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CompiledMessageV0ImplCopyWith<_$CompiledMessageV0Impl> get copyWith =>
@@ -652,8 +669,11 @@ abstract class CompiledMessageV0 extends CompiledMessage {
   @override
   List<CompiledInstruction> get instructions;
   List<MessageAddressTableLookup> get addressTableLookups;
+
+  /// Create a copy of CompiledMessage
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CompiledMessageV0ImplCopyWith<_$CompiledMessageV0Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }

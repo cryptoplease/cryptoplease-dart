@@ -8,11 +8,13 @@ part of 'meta.dart';
 
 Meta _$MetaFromJson(Map<String, dynamic> json) => Meta(
       err: json['err'] as Map<String, dynamic>?,
-      fee: json['fee'] as int,
-      preBalances:
-          (json['preBalances'] as List<dynamic>).map((e) => e as int).toList(),
-      postBalances:
-          (json['postBalances'] as List<dynamic>).map((e) => e as int).toList(),
+      fee: (json['fee'] as num).toInt(),
+      preBalances: (json['preBalances'] as List<dynamic>)
+          .map((e) => (e as num).toInt())
+          .toList(),
+      postBalances: (json['postBalances'] as List<dynamic>)
+          .map((e) => (e as num).toInt())
+          .toList(),
       innerInstructions: (json['innerInstructions'] as List<dynamic>?)
           ?.map((e) => InnerInstruction.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -35,7 +37,7 @@ Meta _$MetaFromJson(Map<String, dynamic> json) => Meta(
       returnData: json['returnData'] == null
           ? null
           : ReturnData.fromJson(json['returnData'] as Map<String, dynamic>),
-      computeUnitsConsumed: json['computeUnitsConsumed'] as int?,
+      computeUnitsConsumed: (json['computeUnitsConsumed'] as num?)?.toInt(),
     );
 
 Map<String, dynamic> _$MetaToJson(Meta instance) => <String, dynamic>{

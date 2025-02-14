@@ -23,8 +23,12 @@ ShortenLinkRequestDto _$ShortenLinkRequestDtoFromJson(
 mixin _$ShortenLinkRequestDto {
   String get fullLink => throw _privateConstructorUsedError;
 
+  /// Serializes this ShortenLinkRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ShortenLinkRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ShortenLinkRequestDtoCopyWith<ShortenLinkRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +53,8 @@ class _$ShortenLinkRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ShortenLinkRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -84,6 +90,8 @@ class __$$ShortenLinkRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$ShortenLinkRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ShortenLinkRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -123,11 +131,13 @@ class _$ShortenLinkRequestDtoImpl implements _ShortenLinkRequestDto {
                 other.fullLink == fullLink));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, fullLink);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ShortenLinkRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ShortenLinkRequestDtoImplCopyWith<_$ShortenLinkRequestDtoImpl>
@@ -151,8 +161,11 @@ abstract class _ShortenLinkRequestDto implements ShortenLinkRequestDto {
 
   @override
   String get fullLink;
+
+  /// Create a copy of ShortenLinkRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ShortenLinkRequestDtoImplCopyWith<_$ShortenLinkRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -166,8 +179,12 @@ ShortenLinkResponseDto _$ShortenLinkResponseDtoFromJson(
 mixin _$ShortenLinkResponseDto {
   String get shortLink => throw _privateConstructorUsedError;
 
+  /// Serializes this ShortenLinkResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ShortenLinkResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ShortenLinkResponseDtoCopyWith<ShortenLinkResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -192,6 +209,8 @@ class _$ShortenLinkResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ShortenLinkResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -228,6 +247,8 @@ class __$$ShortenLinkResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$ShortenLinkResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ShortenLinkResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -267,11 +288,13 @@ class _$ShortenLinkResponseDtoImpl implements _ShortenLinkResponseDto {
                 other.shortLink == shortLink));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, shortLink);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ShortenLinkResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ShortenLinkResponseDtoImplCopyWith<_$ShortenLinkResponseDtoImpl>
@@ -295,8 +318,11 @@ abstract class _ShortenLinkResponseDto implements ShortenLinkResponseDto {
 
   @override
   String get shortLink;
+
+  /// Create a copy of ShortenLinkResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ShortenLinkResponseDtoImplCopyWith<_$ShortenLinkResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -310,8 +336,12 @@ UnshortenLinkRequestDto _$UnshortenLinkRequestDtoFromJson(
 mixin _$UnshortenLinkRequestDto {
   String get shortLink => throw _privateConstructorUsedError;
 
+  /// Serializes this UnshortenLinkRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of UnshortenLinkRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $UnshortenLinkRequestDtoCopyWith<UnshortenLinkRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -336,6 +366,8 @@ class _$UnshortenLinkRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of UnshortenLinkRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -372,6 +404,8 @@ class __$$UnshortenLinkRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$UnshortenLinkRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UnshortenLinkRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -411,11 +445,13 @@ class _$UnshortenLinkRequestDtoImpl implements _UnshortenLinkRequestDto {
                 other.shortLink == shortLink));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, shortLink);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of UnshortenLinkRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$UnshortenLinkRequestDtoImplCopyWith<_$UnshortenLinkRequestDtoImpl>
@@ -439,8 +475,11 @@ abstract class _UnshortenLinkRequestDto implements UnshortenLinkRequestDto {
 
   @override
   String get shortLink;
+
+  /// Create a copy of UnshortenLinkRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UnshortenLinkRequestDtoImplCopyWith<_$UnshortenLinkRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -454,8 +493,12 @@ UnshortenLinkResponseDto _$UnshortenLinkResponseDtoFromJson(
 mixin _$UnshortenLinkResponseDto {
   String get fullLink => throw _privateConstructorUsedError;
 
+  /// Serializes this UnshortenLinkResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of UnshortenLinkResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $UnshortenLinkResponseDtoCopyWith<UnshortenLinkResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -480,6 +523,8 @@ class _$UnshortenLinkResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of UnshortenLinkResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -516,6 +561,8 @@ class __$$UnshortenLinkResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$UnshortenLinkResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UnshortenLinkResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -555,11 +602,13 @@ class _$UnshortenLinkResponseDtoImpl implements _UnshortenLinkResponseDto {
                 other.fullLink == fullLink));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, fullLink);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of UnshortenLinkResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$UnshortenLinkResponseDtoImplCopyWith<_$UnshortenLinkResponseDtoImpl>
@@ -583,8 +632,11 @@ abstract class _UnshortenLinkResponseDto implements UnshortenLinkResponseDto {
 
   @override
   String get fullLink;
+
+  /// Create a copy of UnshortenLinkResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UnshortenLinkResponseDtoImplCopyWith<_$UnshortenLinkResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

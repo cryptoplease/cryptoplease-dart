@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use, drop deprecated usages until we raise SDK constraint lower-bound.
+
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';

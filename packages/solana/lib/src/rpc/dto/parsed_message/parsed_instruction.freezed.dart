@@ -12,7 +12,7 @@ part of 'parsed_instruction.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 ParsedInstruction _$ParsedInstructionFromJson(Map<String, dynamic> json) {
   switch (json['program']) {
@@ -81,6 +81,8 @@ mixin _$ParsedInstruction {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this ParsedInstruction to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 }
 
@@ -100,6 +102,9 @@ class _$ParsedInstructionCopyWithImpl<$Res, $Val extends ParsedInstruction>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -123,6 +128,8 @@ class __$$ParsedInstructionSystemImplCopyWithImpl<$Res>
       $Res Function(_$ParsedInstructionSystemImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -141,6 +148,8 @@ class __$$ParsedInstructionSystemImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParsedSystemInstructionCopyWith<$Res> get parsed {
@@ -183,11 +192,13 @@ class _$ParsedInstructionSystemImpl implements ParsedInstructionSystem {
             (identical(other.parsed, parsed) || other.parsed == parsed));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, programId, parsed);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedInstructionSystemImplCopyWith<_$ParsedInstructionSystemImpl>
@@ -288,7 +299,10 @@ abstract class ParsedInstructionSystem implements ParsedInstruction {
 
   String get programId;
   ParsedSystemInstruction get parsed;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedInstructionSystemImplCopyWith<_$ParsedInstructionSystemImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -315,6 +329,8 @@ class __$$ParsedInstructionSplTokenImplCopyWithImpl<$Res>
       $Res Function(_$ParsedInstructionSplTokenImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -328,6 +344,8 @@ class __$$ParsedInstructionSplTokenImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParsedSplTokenInstructionCopyWith<$Res> get parsed {
@@ -366,11 +384,13 @@ class _$ParsedInstructionSplTokenImpl implements ParsedInstructionSplToken {
             (identical(other.parsed, parsed) || other.parsed == parsed));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, parsed);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedInstructionSplTokenImplCopyWith<_$ParsedInstructionSplTokenImpl>
@@ -469,7 +489,10 @@ abstract class ParsedInstructionSplToken implements ParsedInstruction {
       _$ParsedInstructionSplTokenImpl.fromJson;
 
   ParsedSplTokenInstruction get parsed;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedInstructionSplTokenImplCopyWith<_$ParsedInstructionSplTokenImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -492,6 +515,8 @@ class __$$ParsedInstructionMemoImplCopyWithImpl<$Res>
       $Res Function(_$ParsedInstructionMemoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -538,11 +563,13 @@ class _$ParsedInstructionMemoImpl implements ParsedInstructionMemo {
             (identical(other.memo, memo) || other.memo == memo));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, memo);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedInstructionMemoImplCopyWith<_$ParsedInstructionMemoImpl>
@@ -644,7 +671,10 @@ abstract class ParsedInstructionMemo implements ParsedInstruction {
 // ignore: invalid_annotation_target
   @JsonKey(name: 'parsed')
   String? get memo;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedInstructionMemoImplCopyWith<_$ParsedInstructionMemoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -669,6 +699,8 @@ class __$$ParsedInstructionUnsupportedImplCopyWithImpl<$Res>
       $Res Function(_$ParsedInstructionUnsupportedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -709,11 +741,13 @@ class _$ParsedInstructionUnsupportedImpl
             (identical(other.program, program) || other.program == program));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, program);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedInstructionUnsupportedImplCopyWith<
@@ -812,7 +846,10 @@ abstract class ParsedInstructionUnsupported implements ParsedInstruction {
       _$ParsedInstructionUnsupportedImpl.fromJson;
 
   String? get program;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParsedInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedInstructionUnsupportedImplCopyWith<
           _$ParsedInstructionUnsupportedImpl>
       get copyWith => throw _privateConstructorUsedError;

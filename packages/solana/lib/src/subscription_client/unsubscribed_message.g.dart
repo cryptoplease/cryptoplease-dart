@@ -8,8 +8,8 @@ part of 'unsubscribed_message.dart';
 
 UnsubscribedMessage _$UnsubscribedMessageFromJson(Map<String, dynamic> json) =>
     UnsubscribedMessage(
-      result: json['result'] as int,
-      id: json['id'] as int,
+      result: (json['result'] as num).toInt(),
+      id: (json['id'] as num).toInt(),
     );
 
 Map<String, dynamic> _$UnsubscribedMessageToJson(

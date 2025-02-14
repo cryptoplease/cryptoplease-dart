@@ -8,8 +8,8 @@ part of 'lockup.dart';
 
 Lockup _$LockupFromJson(Map<String, dynamic> json) => Lockup(
       custodian: json['custodian'] as String,
-      epoch: json['epoch'] as int,
-      unixTimestamp: json['unixTimestamp'] as int,
+      epoch: (json['epoch'] as num).toInt(),
+      unixTimestamp: (json['unixTimestamp'] as num).toInt(),
     );
 
 Map<String, dynamic> _$LockupToJson(Lockup instance) => <String, dynamic>{

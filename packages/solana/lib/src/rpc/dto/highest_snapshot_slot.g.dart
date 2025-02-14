@@ -8,8 +8,8 @@ part of 'highest_snapshot_slot.dart';
 
 HighestSnapshotSlot _$HighestSnapshotSlotFromJson(Map<String, dynamic> json) =>
     HighestSnapshotSlot(
-      full: json['full'] as int,
-      incremental: json['incremental'] as int?,
+      full: (json['full'] as num).toInt(),
+      incremental: (json['incremental'] as num?)?.toInt(),
     );
 
 Map<String, dynamic> _$HighestSnapshotSlotToJson(

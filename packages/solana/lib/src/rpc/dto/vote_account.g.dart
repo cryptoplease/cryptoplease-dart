@@ -9,10 +9,10 @@ part of 'vote_account.dart';
 VoteAccount _$VoteAccountFromJson(Map<String, dynamic> json) => VoteAccount(
       votePubkey: json['votePubkey'] as String,
       nodePubkey: json['nodePubkey'] as String,
-      activatedStake: json['activatedStake'] as int,
+      activatedStake: (json['activatedStake'] as num).toInt(),
       epochVoteAccount: json['epochVoteAccount'] as bool,
-      commission: json['commission'] as int,
-      lastVote: json['lastVote'] as int,
+      commission: (json['commission'] as num).toInt(),
+      lastVote: (json['lastVote'] as num).toInt(),
       epochCredits: (json['epochCredits'] as List<dynamic>)
           .map(EpochCredits.fromJson)
           .toList(),

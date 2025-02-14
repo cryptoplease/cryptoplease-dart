@@ -10,7 +10,7 @@ TokenLargestAccount _$TokenLargestAccountFromJson(Map<String, dynamic> json) =>
     TokenLargestAccount(
       address: json['address'] as String,
       amount: json['amount'] as String,
-      decimals: json['decimals'] as int,
+      decimals: (json['decimals'] as num).toInt(),
       uiAmountString: json['uiAmountString'] as String,
     );
 

@@ -12,14 +12,16 @@ part of 'signed_tx.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$SignedTx {
   List<Signature> get signatures => throw _privateConstructorUsedError;
   CompiledMessage get compiledMessage => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SignedTx
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SignedTxCopyWith<SignedTx> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -44,6 +46,8 @@ class _$SignedTxCopyWithImpl<$Res, $Val extends SignedTx>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SignedTx
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -62,6 +66,8 @@ class _$SignedTxCopyWithImpl<$Res, $Val extends SignedTx>
     ) as $Val);
   }
 
+  /// Create a copy of SignedTx
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CompiledMessageCopyWith<$Res> get compiledMessage {
@@ -93,6 +99,8 @@ class __$$SignedTxImplCopyWithImpl<$Res>
       _$SignedTxImpl _value, $Res Function(_$SignedTxImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SignedTx
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -153,7 +161,9 @@ class _$SignedTxImpl extends _SignedTx {
   int get hashCode => Object.hash(runtimeType,
       const DeepCollectionEquality().hash(_signatures), compiledMessage);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SignedTx
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SignedTxImplCopyWith<_$SignedTxImpl> get copyWith =>
@@ -170,8 +180,11 @@ abstract class _SignedTx extends SignedTx {
   List<Signature> get signatures;
   @override
   CompiledMessage get compiledMessage;
+
+  /// Create a copy of SignedTx
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SignedTxImplCopyWith<_$SignedTxImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

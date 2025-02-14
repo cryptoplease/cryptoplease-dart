@@ -12,7 +12,7 @@ part of 'stake_program_account_data.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 StakeProgramAccountData _$StakeProgramAccountDataFromJson(
     Map<String, dynamic> json) {
@@ -75,6 +75,8 @@ mixin _$StakeProgramAccountData {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this StakeProgramAccountData to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 }
 
@@ -95,6 +97,9 @@ class _$StakeProgramAccountDataCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of StakeProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -117,6 +122,8 @@ class __$$StakeProgramDelegatedAccountDataImplCopyWithImpl<$Res>
       $Res Function(_$StakeProgramDelegatedAccountDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StakeProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -162,11 +169,13 @@ class _$StakeProgramDelegatedAccountDataImpl
             (identical(other.info, info) || other.info == info));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, info);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StakeProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$StakeProgramDelegatedAccountDataImplCopyWith<
@@ -262,7 +271,10 @@ abstract class StakeProgramDelegatedAccountData
 
   @override
   StakeDelegatedAccountInfo get info;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of StakeProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$StakeProgramDelegatedAccountDataImplCopyWith<
           _$StakeProgramDelegatedAccountDataImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -288,6 +300,8 @@ class __$$StakeProgramInitializedAccountDataImplCopyWithImpl<$Res>
       $Res Function(_$StakeProgramInitializedAccountDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StakeProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -333,11 +347,13 @@ class _$StakeProgramInitializedAccountDataImpl
             (identical(other.info, info) || other.info == info));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, info);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StakeProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$StakeProgramInitializedAccountDataImplCopyWith<
@@ -434,7 +450,10 @@ abstract class StakeProgramInitializedAccountData
 
   @override
   StakeInitializedAccountInfo get info;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of StakeProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$StakeProgramInitializedAccountDataImplCopyWith<
           _$StakeProgramInitializedAccountDataImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -460,6 +479,8 @@ class __$$StakeProgramUnknownAccountDataImplCopyWithImpl<$Res>
       $Res Function(_$StakeProgramUnknownAccountDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StakeProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -511,12 +532,14 @@ class _$StakeProgramUnknownAccountDataImpl
             const DeepCollectionEquality().equals(other._info, _info));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_info));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StakeProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$StakeProgramUnknownAccountDataImplCopyWith<
@@ -611,7 +634,10 @@ abstract class StakeProgramUnknownAccountData
 
   @override
   Map<String, dynamic> get info;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of StakeProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$StakeProgramUnknownAccountDataImplCopyWith<
           _$StakeProgramUnknownAccountDataImpl>
       get copyWith => throw _privateConstructorUsedError;

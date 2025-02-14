@@ -8,10 +8,10 @@ part of 'signature_status.dart';
 
 SignatureStatus _$SignatureStatusFromJson(Map<String, dynamic> json) =>
     SignatureStatus(
-      slot: json['slot'] as int,
+      slot: (json['slot'] as num).toInt(),
       confirmationStatus:
           $enumDecode(_$CommitmentEnumMap, json['confirmationStatus']),
-      confirmations: json['confirmations'] as int?,
+      confirmations: (json['confirmations'] as num?)?.toInt(),
       err: json['err'] as Map<String, dynamic>?,
     );
 

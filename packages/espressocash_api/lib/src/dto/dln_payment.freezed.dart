@@ -25,8 +25,12 @@ mixin _$PaymentQuoteRequestDto {
   String get receiverAddress => throw _privateConstructorUsedError;
   String get receiverBlockchain => throw _privateConstructorUsedError;
 
+  /// Serializes this PaymentQuoteRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of PaymentQuoteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PaymentQuoteRequestDtoCopyWith<PaymentQuoteRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -51,6 +55,8 @@ class _$PaymentQuoteRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PaymentQuoteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -97,6 +103,8 @@ class __$$PaymentQuoteRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$PaymentQuoteRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PaymentQuoteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -156,12 +164,14 @@ class _$PaymentQuoteRequestDtoImpl implements _PaymentQuoteRequestDto {
                 other.receiverBlockchain == receiverBlockchain));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, amount, receiverAddress, receiverBlockchain);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PaymentQuoteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PaymentQuoteRequestDtoImplCopyWith<_$PaymentQuoteRequestDtoImpl>
@@ -191,8 +201,11 @@ abstract class _PaymentQuoteRequestDto implements PaymentQuoteRequestDto {
   String get receiverAddress;
   @override
   String get receiverBlockchain;
+
+  /// Create a copy of PaymentQuoteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PaymentQuoteRequestDtoImplCopyWith<_$PaymentQuoteRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -210,8 +223,12 @@ mixin _$PaymentQuoteResponseDto {
   int get feeInUsdc => throw _privateConstructorUsedError;
   BigInt get slot => throw _privateConstructorUsedError;
 
+  /// Serializes this PaymentQuoteResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of PaymentQuoteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PaymentQuoteResponseDtoCopyWith<PaymentQuoteResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -241,6 +258,8 @@ class _$PaymentQuoteResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PaymentQuoteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -302,6 +321,8 @@ class __$$PaymentQuoteResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$PaymentQuoteResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PaymentQuoteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -381,12 +402,14 @@ class _$PaymentQuoteResponseDtoImpl implements _PaymentQuoteResponseDto {
             (identical(other.slot, slot) || other.slot == slot));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, inputAmount, receiverAmount, encodedTx, feeInUsdc, slot);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PaymentQuoteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PaymentQuoteResponseDtoImplCopyWith<_$PaymentQuoteResponseDtoImpl>
@@ -422,8 +445,11 @@ abstract class _PaymentQuoteResponseDto implements PaymentQuoteResponseDto {
   int get feeInUsdc;
   @override
   BigInt get slot;
+
+  /// Create a copy of PaymentQuoteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PaymentQuoteResponseDtoImplCopyWith<_$PaymentQuoteResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -437,8 +463,12 @@ OrderStatusDlnRequestDto _$OrderStatusDlnRequestDtoFromJson(
 mixin _$OrderStatusDlnRequestDto {
   String get orderId => throw _privateConstructorUsedError;
 
+  /// Serializes this OrderStatusDlnRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of OrderStatusDlnRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $OrderStatusDlnRequestDtoCopyWith<OrderStatusDlnRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -463,6 +493,8 @@ class _$OrderStatusDlnRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of OrderStatusDlnRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -499,6 +531,8 @@ class __$$OrderStatusDlnRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$OrderStatusDlnRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of OrderStatusDlnRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -537,11 +571,13 @@ class _$OrderStatusDlnRequestDtoImpl implements _OrderStatusDlnRequestDto {
             (identical(other.orderId, orderId) || other.orderId == orderId));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, orderId);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of OrderStatusDlnRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$OrderStatusDlnRequestDtoImplCopyWith<_$OrderStatusDlnRequestDtoImpl>
@@ -565,8 +601,11 @@ abstract class _OrderStatusDlnRequestDto implements OrderStatusDlnRequestDto {
 
   @override
   String get orderId;
+
+  /// Create a copy of OrderStatusDlnRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$OrderStatusDlnRequestDtoImplCopyWith<_$OrderStatusDlnRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -580,8 +619,12 @@ OrderStatusDlnResponseDto _$OrderStatusDlnResponseDtoFromJson(
 mixin _$OrderStatusDlnResponseDto {
   DlnOrderStatus get status => throw _privateConstructorUsedError;
 
+  /// Serializes this OrderStatusDlnResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of OrderStatusDlnResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $OrderStatusDlnResponseDtoCopyWith<OrderStatusDlnResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -606,6 +649,8 @@ class _$OrderStatusDlnResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of OrderStatusDlnResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -642,6 +687,8 @@ class __$$OrderStatusDlnResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$OrderStatusDlnResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of OrderStatusDlnResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -680,11 +727,13 @@ class _$OrderStatusDlnResponseDtoImpl implements _OrderStatusDlnResponseDto {
             (identical(other.status, status) || other.status == status));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, status);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of OrderStatusDlnResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$OrderStatusDlnResponseDtoImplCopyWith<_$OrderStatusDlnResponseDtoImpl>
@@ -708,8 +757,11 @@ abstract class _OrderStatusDlnResponseDto implements OrderStatusDlnResponseDto {
 
   @override
   DlnOrderStatus get status;
+
+  /// Create a copy of OrderStatusDlnResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$OrderStatusDlnResponseDtoImplCopyWith<_$OrderStatusDlnResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -722,8 +774,12 @@ OrderIdDlnRequestDto _$OrderIdDlnRequestDtoFromJson(Map<String, dynamic> json) {
 mixin _$OrderIdDlnRequestDto {
   String get txId => throw _privateConstructorUsedError;
 
+  /// Serializes this OrderIdDlnRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of OrderIdDlnRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $OrderIdDlnRequestDtoCopyWith<OrderIdDlnRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -748,6 +804,8 @@ class _$OrderIdDlnRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of OrderIdDlnRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -781,6 +839,8 @@ class __$$OrderIdDlnRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$OrderIdDlnRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of OrderIdDlnRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -819,11 +879,13 @@ class _$OrderIdDlnRequestDtoImpl implements _OrderIdDlnRequestDto {
             (identical(other.txId, txId) || other.txId == txId));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, txId);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of OrderIdDlnRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$OrderIdDlnRequestDtoImplCopyWith<_$OrderIdDlnRequestDtoImpl>
@@ -848,8 +910,11 @@ abstract class _OrderIdDlnRequestDto implements OrderIdDlnRequestDto {
 
   @override
   String get txId;
+
+  /// Create a copy of OrderIdDlnRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$OrderIdDlnRequestDtoImplCopyWith<_$OrderIdDlnRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -863,8 +928,12 @@ OrderIdDlnResponseDto _$OrderIdDlnResponseDtoFromJson(
 mixin _$OrderIdDlnResponseDto {
   String? get orderId => throw _privateConstructorUsedError;
 
+  /// Serializes this OrderIdDlnResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of OrderIdDlnResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $OrderIdDlnResponseDtoCopyWith<OrderIdDlnResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -889,6 +958,8 @@ class _$OrderIdDlnResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of OrderIdDlnResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -924,6 +995,8 @@ class __$$OrderIdDlnResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$OrderIdDlnResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of OrderIdDlnResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -962,11 +1035,13 @@ class _$OrderIdDlnResponseDtoImpl implements _OrderIdDlnResponseDto {
             (identical(other.orderId, orderId) || other.orderId == orderId));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, orderId);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of OrderIdDlnResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$OrderIdDlnResponseDtoImplCopyWith<_$OrderIdDlnResponseDtoImpl>
@@ -990,8 +1065,11 @@ abstract class _OrderIdDlnResponseDto implements OrderIdDlnResponseDto {
 
   @override
   String? get orderId;
+
+  /// Create a copy of OrderIdDlnResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$OrderIdDlnResponseDtoImplCopyWith<_$OrderIdDlnResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1009,8 +1087,12 @@ mixin _$IncomingQuoteRequestDto {
   String get receiverAddress => throw _privateConstructorUsedError;
   String? get solanaReferenceAddress => throw _privateConstructorUsedError;
 
+  /// Serializes this IncomingQuoteRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of IncomingQuoteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $IncomingQuoteRequestDtoCopyWith<IncomingQuoteRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1040,6 +1122,8 @@ class _$IncomingQuoteRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of IncomingQuoteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1101,6 +1185,8 @@ class __$$IncomingQuoteRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$IncomingQuoteRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of IncomingQuoteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1180,12 +1266,14 @@ class _$IncomingQuoteRequestDtoImpl implements _IncomingQuoteRequestDto {
                 other.solanaReferenceAddress == solanaReferenceAddress));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, amount, senderAddress,
       senderBlockchain, receiverAddress, solanaReferenceAddress);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of IncomingQuoteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$IncomingQuoteRequestDtoImplCopyWith<_$IncomingQuoteRequestDtoImpl>
@@ -1222,8 +1310,11 @@ abstract class _IncomingQuoteRequestDto implements IncomingQuoteRequestDto {
   String get receiverAddress;
   @override
   String? get solanaReferenceAddress;
+
+  /// Create a copy of IncomingQuoteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$IncomingQuoteRequestDtoImplCopyWith<_$IncomingQuoteRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1241,8 +1332,12 @@ mixin _$IncomingQuoteResponseDto {
   int get receiverAmount => throw _privateConstructorUsedError;
   int get feeInUsdc => throw _privateConstructorUsedError;
 
+  /// Serializes this IncomingQuoteResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of IncomingQuoteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $IncomingQuoteResponseDtoCopyWith<IncomingQuoteResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1275,6 +1370,8 @@ class _$IncomingQuoteResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of IncomingQuoteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1308,6 +1405,8 @@ class _$IncomingQuoteResponseDtoCopyWithImpl<$Res,
     ) as $Val);
   }
 
+  /// Create a copy of IncomingQuoteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuoteTxCopyWith<$Res> get tx {
@@ -1316,6 +1415,8 @@ class _$IncomingQuoteResponseDtoCopyWithImpl<$Res,
     });
   }
 
+  /// Create a copy of IncomingQuoteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $QuoteUsdcInfoCopyWith<$Res> get usdcInfo {
@@ -1357,6 +1458,8 @@ class __$$IncomingQuoteResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$IncomingQuoteResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of IncomingQuoteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1436,12 +1539,14 @@ class _$IncomingQuoteResponseDtoImpl implements _IncomingQuoteResponseDto {
                 other.feeInUsdc == feeInUsdc));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, tx, usdcInfo, inputAmount, receiverAmount, feeInUsdc);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of IncomingQuoteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$IncomingQuoteResponseDtoImplCopyWith<_$IncomingQuoteResponseDtoImpl>
@@ -1477,8 +1582,11 @@ abstract class _IncomingQuoteResponseDto implements IncomingQuoteResponseDto {
   int get receiverAmount;
   @override
   int get feeInUsdc;
+
+  /// Create a copy of IncomingQuoteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$IncomingQuoteResponseDtoImplCopyWith<_$IncomingQuoteResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1493,8 +1601,12 @@ mixin _$QuoteTx {
   String get data => throw _privateConstructorUsedError;
   int get value => throw _privateConstructorUsedError;
 
+  /// Serializes this QuoteTx to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of QuoteTx
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $QuoteTxCopyWith<QuoteTx> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -1516,6 +1628,8 @@ class _$QuoteTxCopyWithImpl<$Res, $Val extends QuoteTx>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of QuoteTx
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1558,6 +1672,8 @@ class __$$QuoteTxImplCopyWithImpl<$Res>
       _$QuoteTxImpl _value, $Res Function(_$QuoteTxImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of QuoteTx
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1613,11 +1729,13 @@ class _$QuoteTxImpl implements _QuoteTx {
             (identical(other.value, value) || other.value == value));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, to, data, value);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of QuoteTx
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$QuoteTxImplCopyWith<_$QuoteTxImpl> get copyWith =>
@@ -1645,8 +1763,11 @@ abstract class _QuoteTx implements QuoteTx {
   String get data;
   @override
   int get value;
+
+  /// Create a copy of QuoteTx
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$QuoteTxImplCopyWith<_$QuoteTxImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1660,8 +1781,12 @@ mixin _$QuoteUsdcInfo {
   String get usdcAddress => throw _privateConstructorUsedError;
   int get approvalAmount => throw _privateConstructorUsedError;
 
+  /// Serializes this QuoteUsdcInfo to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of QuoteUsdcInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $QuoteUsdcInfoCopyWith<QuoteUsdcInfo> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1685,6 +1810,8 @@ class _$QuoteUsdcInfoCopyWithImpl<$Res, $Val extends QuoteUsdcInfo>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of QuoteUsdcInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1723,6 +1850,8 @@ class __$$QuoteUsdcInfoImplCopyWithImpl<$Res>
       _$QuoteUsdcInfoImpl _value, $Res Function(_$QuoteUsdcInfoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of QuoteUsdcInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1772,11 +1901,13 @@ class _$QuoteUsdcInfoImpl implements _QuoteUsdcInfo {
                 other.approvalAmount == approvalAmount));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, usdcAddress, approvalAmount);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of QuoteUsdcInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$QuoteUsdcInfoImplCopyWith<_$QuoteUsdcInfoImpl> get copyWith =>
@@ -1802,8 +1933,11 @@ abstract class _QuoteUsdcInfo implements QuoteUsdcInfo {
   String get usdcAddress;
   @override
   int get approvalAmount;
+
+  /// Create a copy of QuoteUsdcInfo
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$QuoteUsdcInfoImplCopyWith<_$QuoteUsdcInfoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

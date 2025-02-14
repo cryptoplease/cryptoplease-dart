@@ -8,7 +8,7 @@ part of 'fee_calculator.dart';
 
 FeeCalculator _$FeeCalculatorFromJson(Map<String, dynamic> json) =>
     FeeCalculator(
-      lamportsPerSignature: json['lamportsPerSignature'] as int,
+      lamportsPerSignature: (json['lamportsPerSignature'] as num).toInt(),
     );
 
 Map<String, dynamic> _$FeeCalculatorToJson(FeeCalculator instance) =>

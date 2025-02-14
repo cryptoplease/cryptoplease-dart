@@ -8,7 +8,7 @@ part of 'large_account.dart';
 
 LargeAccount _$LargeAccountFromJson(Map<String, dynamic> json) => LargeAccount(
       address: json['address'] as String,
-      lamports: json['lamports'] as int,
+      lamports: (json['lamports'] as num).toInt(),
     );
 
 Map<String, dynamic> _$LargeAccountToJson(LargeAccount instance) =>

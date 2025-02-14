@@ -8,11 +8,11 @@ part of 'inflation_reward.dart';
 
 InflationReward _$InflationRewardFromJson(Map<String, dynamic> json) =>
     InflationReward(
-      epoch: json['epoch'] as int,
-      effectiveSlot: json['effectiveSlot'] as int,
-      amount: json['amount'] as int,
-      postBalance: json['postBalance'] as int,
-      commission: json['commission'] as int,
+      epoch: (json['epoch'] as num).toInt(),
+      effectiveSlot: (json['effectiveSlot'] as num).toInt(),
+      amount: (json['amount'] as num).toInt(),
+      postBalance: (json['postBalance'] as num).toInt(),
+      commission: (json['commission'] as num).toInt(),
     );
 
 Map<String, dynamic> _$InflationRewardToJson(InflationReward instance) =>

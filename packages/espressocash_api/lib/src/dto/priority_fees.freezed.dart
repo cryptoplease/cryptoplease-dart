@@ -23,8 +23,12 @@ PriorityFeesRequestDto _$PriorityFeesRequestDtoFromJson(
 mixin _$PriorityFeesRequestDto {
   String get encodedTx => throw _privateConstructorUsedError;
 
+  /// Serializes this PriorityFeesRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of PriorityFeesRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PriorityFeesRequestDtoCopyWith<PriorityFeesRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +53,8 @@ class _$PriorityFeesRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PriorityFeesRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -85,6 +91,8 @@ class __$$PriorityFeesRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$PriorityFeesRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PriorityFeesRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -124,11 +132,13 @@ class _$PriorityFeesRequestDtoImpl implements _PriorityFeesRequestDto {
                 other.encodedTx == encodedTx));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, encodedTx);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PriorityFeesRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PriorityFeesRequestDtoImplCopyWith<_$PriorityFeesRequestDtoImpl>
@@ -152,8 +162,11 @@ abstract class _PriorityFeesRequestDto implements PriorityFeesRequestDto {
 
   @override
   String get encodedTx;
+
+  /// Create a copy of PriorityFeesRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PriorityFeesRequestDtoImplCopyWith<_$PriorityFeesRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -172,8 +185,12 @@ mixin _$PriorityFeesResponseDto {
   int? get veryHigh => throw _privateConstructorUsedError;
   int? get unsafeMax => throw _privateConstructorUsedError;
 
+  /// Serializes this PriorityFeesResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of PriorityFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PriorityFeesResponseDtoCopyWith<PriorityFeesResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -204,6 +221,8 @@ class _$PriorityFeesResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PriorityFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -271,6 +290,8 @@ class __$$PriorityFeesResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$PriorityFeesResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PriorityFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -357,12 +378,14 @@ class _$PriorityFeesResponseDtoImpl implements _PriorityFeesResponseDto {
                 other.unsafeMax == unsafeMax));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, none, low, medium, high, veryHigh, unsafeMax);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PriorityFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PriorityFeesResponseDtoImplCopyWith<_$PriorityFeesResponseDtoImpl>
@@ -401,8 +424,11 @@ abstract class _PriorityFeesResponseDto implements PriorityFeesResponseDto {
   int? get veryHigh;
   @override
   int? get unsafeMax;
+
+  /// Create a copy of PriorityFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PriorityFeesResponseDtoImplCopyWith<_$PriorityFeesResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

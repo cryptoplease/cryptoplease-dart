@@ -13,7 +13,7 @@ TransactionStatus _$TransactionStatusFromJson(Map<String, dynamic> json) =>
       accounts: (json['accounts'] as List<dynamic>?)
           ?.map((e) => Account.fromJson(e as Map<String, dynamic>))
           .toList(),
-      unitsConsumed: json['unitsConsumed'] as int?,
+      unitsConsumed: (json['unitsConsumed'] as num?)?.toInt(),
       returnData: json['returnData'] == null
           ? null
           : ReturnData.fromJson(json['returnData'] as Map<String, dynamic>),

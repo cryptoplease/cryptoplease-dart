@@ -8,7 +8,7 @@ part of 'inner_instruction.dart';
 
 InnerInstruction _$InnerInstructionFromJson(Map<String, dynamic> json) =>
     InnerInstruction(
-      index: json['index'] as int,
+      index: (json['index'] as num).toInt(),
       instructions: (json['instructions'] as List<dynamic>)
           .map((e) => Instruction.fromJson(e as Map<String, dynamic>))
           .toList(),

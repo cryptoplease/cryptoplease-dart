@@ -8,10 +8,10 @@ part of 'reward.dart';
 
 Reward _$RewardFromJson(Map<String, dynamic> json) => Reward(
       pubkey: json['pubkey'] as String,
-      lamports: json['lamports'] as int,
-      postBalance: json['postBalance'] as int,
+      lamports: (json['lamports'] as num).toInt(),
+      postBalance: (json['postBalance'] as num).toInt(),
       rewardType: $enumDecode(_$RewardTypeEnumMap, json['rewardType']),
-      commission: json['commission'] as int,
+      commission: (json['commission'] as num).toInt(),
     );
 
 Map<String, dynamic> _$RewardToJson(Reward instance) => <String, dynamic>{

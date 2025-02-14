@@ -9,8 +9,8 @@ part of 'stake_activation.dart';
 StakeActivation _$StakeActivationFromJson(Map<String, dynamic> json) =>
     StakeActivation(
       state: $enumDecode(_$StakeActivationStateEnumMap, json['state']),
-      active: json['active'] as int,
-      inactive: json['inactive'] as int,
+      active: (json['active'] as num).toInt(),
+      inactive: (json['inactive'] as num).toInt(),
     );
 
 Map<String, dynamic> _$StakeActivationToJson(StakeActivation instance) =>

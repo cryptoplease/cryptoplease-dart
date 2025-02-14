@@ -12,7 +12,7 @@ part of 'mint.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Mint {
@@ -38,7 +38,9 @@ mixin _$Mint {
   /// Optional authority to freeze token accounts.
   Ed25519HDPublicKey? get freezeAuthority => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Mint
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MintCopyWith<Mint> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -66,6 +68,8 @@ class _$MintCopyWithImpl<$Res, $Val extends Mint>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Mint
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -128,6 +132,8 @@ class __$$MintImplCopyWithImpl<$Res>
   __$$MintImplCopyWithImpl(_$MintImpl _value, $Res Function(_$MintImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Mint
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -232,7 +238,9 @@ class _$MintImpl implements _Mint {
   int get hashCode => Object.hash(runtimeType, address, supply, decimals,
       mintAuthority, isInitialized, freezeAuthority);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Mint
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MintImplCopyWith<_$MintImpl> get copyWith =>
@@ -248,36 +256,38 @@ abstract class _Mint implements Mint {
       required final bool isInitialized,
       final Ed25519HDPublicKey? freezeAuthority}) = _$MintImpl;
 
-  @override
-
   /// Address of the mint
-  Ed25519HDPublicKey get address;
   @override
+  Ed25519HDPublicKey get address;
 
   /// Total supply of tokens.
-  BigInt get supply;
   @override
+  BigInt get supply;
 
   /// Number of base 10 digits to the right of the decimal place.
-  int get decimals;
   @override
+  int get decimals;
 
   /// Optional authority used to mint new tokens.
   ///
   /// The mint authority may only be provided during mint creation. If no mint
   /// authority is present then the mint has a fixed supply and no further
   /// tokens may be minted.
-  Ed25519HDPublicKey? get mintAuthority;
   @override
+  Ed25519HDPublicKey? get mintAuthority;
 
   /// Is this mint initialized
-  bool get isInitialized;
   @override
+  bool get isInitialized;
 
   /// Optional authority to freeze token accounts.
-  Ed25519HDPublicKey? get freezeAuthority;
   @override
-  @JsonKey(ignore: true)
+  Ed25519HDPublicKey? get freezeAuthority;
+
+  /// Create a copy of Mint
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MintImplCopyWith<_$MintImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

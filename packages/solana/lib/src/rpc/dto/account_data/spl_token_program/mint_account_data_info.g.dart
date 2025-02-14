@@ -11,7 +11,7 @@ MintAccountDataInfo _$MintAccountDataInfoFromJson(Map<String, dynamic> json) =>
       mintAuthority: json['mintAuthority'] as String?,
       freezedAuthority: json['freezedAuthority'] as String?,
       isInitialized: json['isInitialized'] as bool,
-      decimals: json['decimals'] as int,
+      decimals: (json['decimals'] as num).toInt(),
       supply: json['supply'] as String,
     );
 

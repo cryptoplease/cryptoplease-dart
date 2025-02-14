@@ -12,7 +12,7 @@ part of 'properties.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 Properties _$PropertiesFromJson(Map<String, dynamic> json) {
   switch (json['category']) {
@@ -96,6 +96,8 @@ mixin _$Properties {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this Properties to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 }
 
@@ -115,6 +117,9 @@ class _$PropertiesCopyWithImpl<$Res, $Val extends Properties>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -131,6 +136,9 @@ class __$$UnknownImplCopyWithImpl<$Res>
   __$$UnknownImplCopyWithImpl(
       _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -155,7 +163,7 @@ class _$UnknownImpl implements Unknown {
         (other.runtimeType == runtimeType && other is _$UnknownImpl);
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => runtimeType.hashCode;
 
@@ -276,6 +284,8 @@ class __$$VideoImplCopyWithImpl<$Res>
       _$VideoImpl _value, $Res Function(_$VideoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -324,12 +334,14 @@ class _$VideoImpl implements Video {
             const DeepCollectionEquality().equals(other._files, _files));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_files));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$VideoImplCopyWith<_$VideoImpl> get copyWith =>
@@ -435,7 +447,10 @@ abstract class Video implements Properties {
   factory Video.fromJson(Map<String, dynamic> json) = _$VideoImpl.fromJson;
 
   List<File> get files;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$VideoImplCopyWith<_$VideoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -457,6 +472,8 @@ class __$$ImageImplCopyWithImpl<$Res>
       _$ImageImpl _value, $Res Function(_$ImageImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -505,12 +522,14 @@ class _$ImageImpl implements Image {
             const DeepCollectionEquality().equals(other._files, _files));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_files));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ImageImplCopyWith<_$ImageImpl> get copyWith =>
@@ -616,7 +635,10 @@ abstract class Image implements Properties {
   factory Image.fromJson(Map<String, dynamic> json) = _$ImageImpl.fromJson;
 
   List<File> get files;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ImageImplCopyWith<_$ImageImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -638,6 +660,8 @@ class __$$Model3DImplCopyWithImpl<$Res>
       _$Model3DImpl _value, $Res Function(_$Model3DImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -686,12 +710,14 @@ class _$Model3DImpl implements Model3D {
             const DeepCollectionEquality().equals(other._files, _files));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_files));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$Model3DImplCopyWith<_$Model3DImpl> get copyWith =>
@@ -797,7 +823,10 @@ abstract class Model3D implements Properties {
   factory Model3D.fromJson(Map<String, dynamic> json) = _$Model3DImpl.fromJson;
 
   List<File> get files;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$Model3DImplCopyWith<_$Model3DImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -819,6 +848,8 @@ class __$$AudioImplCopyWithImpl<$Res>
       _$AudioImpl _value, $Res Function(_$AudioImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -867,12 +898,14 @@ class _$AudioImpl implements Audio {
             const DeepCollectionEquality().equals(other._files, _files));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_files));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AudioImplCopyWith<_$AudioImpl> get copyWith =>
@@ -978,7 +1011,10 @@ abstract class Audio implements Properties {
   factory Audio.fromJson(Map<String, dynamic> json) = _$AudioImpl.fromJson;
 
   List<File> get files;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AudioImplCopyWith<_$AudioImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -999,6 +1035,8 @@ class __$$HtmlImplCopyWithImpl<$Res>
   __$$HtmlImplCopyWithImpl(_$HtmlImpl _value, $Res Function(_$HtmlImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1047,12 +1085,14 @@ class _$HtmlImpl implements Html {
             const DeepCollectionEquality().equals(other._files, _files));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_files));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$HtmlImplCopyWith<_$HtmlImpl> get copyWith =>
@@ -1158,7 +1198,10 @@ abstract class Html implements Properties {
   factory Html.fromJson(Map<String, dynamic> json) = _$HtmlImpl.fromJson;
 
   List<File> get files;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Properties
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$HtmlImplCopyWith<_$HtmlImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

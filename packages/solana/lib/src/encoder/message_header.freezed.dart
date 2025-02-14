@@ -12,7 +12,7 @@ part of 'message_header.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$MessageHeader {
@@ -20,7 +20,9 @@ mixin _$MessageHeader {
   int get numReadonlySignedAccounts => throw _privateConstructorUsedError;
   int get numReadonlyUnsignedAccounts => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MessageHeader
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MessageHeaderCopyWith<MessageHeader> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -47,6 +49,8 @@ class _$MessageHeaderCopyWithImpl<$Res, $Val extends MessageHeader>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MessageHeader
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -93,6 +97,8 @@ class __$$MessageHeaderImplCopyWithImpl<$Res>
       _$MessageHeaderImpl _value, $Res Function(_$MessageHeaderImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MessageHeader
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -158,7 +164,9 @@ class _$MessageHeaderImpl extends _MessageHeader {
   int get hashCode => Object.hash(runtimeType, numRequiredSignatures,
       numReadonlySignedAccounts, numReadonlyUnsignedAccounts);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MessageHeader
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MessageHeaderImplCopyWith<_$MessageHeaderImpl> get copyWith =>
@@ -178,8 +186,11 @@ abstract class _MessageHeader extends MessageHeader {
   int get numReadonlySignedAccounts;
   @override
   int get numReadonlyUnsignedAccounts;
+
+  /// Create a copy of MessageHeader
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MessageHeaderImplCopyWith<_$MessageHeaderImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

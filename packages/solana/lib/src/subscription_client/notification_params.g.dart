@@ -13,7 +13,7 @@ NotificationParams<T> _$NotificationParamsFromJson<T>(
     NotificationParams<T>(
       result: NotificationResult<T>.fromJson(
           json['result'] as Map<String, dynamic>, (value) => fromJsonT(value)),
-      subscription: json['subscription'] as int,
+      subscription: (json['subscription'] as num).toInt(),
     );
 
 Map<String, dynamic> _$NotificationParamsToJson<T>(

@@ -9,7 +9,7 @@ part of 'solana_version.dart';
 SolanaVersion _$SolanaVersionFromJson(Map<String, dynamic> json) =>
     SolanaVersion(
       solanaCore: json['solana-core'] as String,
-      featureSet: json['feature-set'] as int,
+      featureSet: (json['feature-set'] as num).toInt(),
     );
 
 Map<String, dynamic> _$SolanaVersionToJson(SolanaVersion instance) =>

@@ -23,8 +23,12 @@ WalletCountryRequestDto _$WalletCountryRequestDtoFromJson(
 mixin _$WalletCountryRequestDto {
   String get countryCode => throw _privateConstructorUsedError;
 
+  /// Serializes this WalletCountryRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of WalletCountryRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $WalletCountryRequestDtoCopyWith<WalletCountryRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +53,8 @@ class _$WalletCountryRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of WalletCountryRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -85,6 +91,8 @@ class __$$WalletCountryRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$WalletCountryRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of WalletCountryRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -124,11 +132,13 @@ class _$WalletCountryRequestDtoImpl implements _WalletCountryRequestDto {
                 other.countryCode == countryCode));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, countryCode);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of WalletCountryRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$WalletCountryRequestDtoImplCopyWith<_$WalletCountryRequestDtoImpl>
@@ -152,8 +162,11 @@ abstract class _WalletCountryRequestDto implements WalletCountryRequestDto {
 
   @override
   String get countryCode;
+
+  /// Create a copy of WalletCountryRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$WalletCountryRequestDtoImplCopyWith<_$WalletCountryRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

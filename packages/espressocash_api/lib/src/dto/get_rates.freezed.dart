@@ -22,8 +22,12 @@ GetRatesResponseDto _$GetRatesResponseDtoFromJson(Map<String, dynamic> json) {
 mixin _$GetRatesResponseDto {
   double get usdc => throw _privateConstructorUsedError;
 
+  /// Serializes this GetRatesResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GetRatesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GetRatesResponseDtoCopyWith<GetRatesResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -47,6 +51,8 @@ class _$GetRatesResponseDtoCopyWithImpl<$Res, $Val extends GetRatesResponseDto>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GetRatesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +86,8 @@ class __$$GetRatesResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$GetRatesResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GetRatesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -118,11 +126,13 @@ class _$GetRatesResponseDtoImpl implements _GetRatesResponseDto {
             (identical(other.usdc, usdc) || other.usdc == usdc));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, usdc);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GetRatesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GetRatesResponseDtoImplCopyWith<_$GetRatesResponseDtoImpl> get copyWith =>
@@ -146,8 +156,11 @@ abstract class _GetRatesResponseDto implements GetRatesResponseDto {
 
   @override
   double get usdc;
+
+  /// Create a copy of GetRatesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GetRatesResponseDtoImplCopyWith<_$GetRatesResponseDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

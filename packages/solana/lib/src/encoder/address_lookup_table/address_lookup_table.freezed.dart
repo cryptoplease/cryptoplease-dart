@@ -12,7 +12,7 @@ part of 'address_lookup_table.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$AddressLookupTableState {
@@ -22,7 +22,9 @@ mixin _$AddressLookupTableState {
   Ed25519HDPublicKey? get authority => throw _privateConstructorUsedError;
   List<Ed25519HDPublicKey> get addresses => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddressLookupTableState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AddressLookupTableStateCopyWith<AddressLookupTableState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -52,6 +54,8 @@ class _$AddressLookupTableStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AddressLookupTableState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -113,6 +117,8 @@ class __$$AddressLookupTableStateImplCopyWithImpl<$Res>
       $Res Function(_$AddressLookupTableStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AddressLookupTableState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -207,7 +213,9 @@ class _$AddressLookupTableStateImpl implements _AddressLookupTableState {
       authority,
       const DeepCollectionEquality().hash(_addresses));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddressLookupTableState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AddressLookupTableStateImplCopyWith<_$AddressLookupTableStateImpl>
@@ -234,8 +242,11 @@ abstract class _AddressLookupTableState implements AddressLookupTableState {
   Ed25519HDPublicKey? get authority;
   @override
   List<Ed25519HDPublicKey> get addresses;
+
+  /// Create a copy of AddressLookupTableState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AddressLookupTableStateImplCopyWith<_$AddressLookupTableStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

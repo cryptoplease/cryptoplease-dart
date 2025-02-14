@@ -8,11 +8,12 @@ part of 'epoch_schedule.dart';
 
 EpochSchedule _$EpochScheduleFromJson(Map<String, dynamic> json) =>
     EpochSchedule(
-      slotsPerEpoch: json['slotsPerEpoch'] as int,
-      leaderScheduleSlotOffset: json['leaderScheduleSlotOffset'] as int,
+      slotsPerEpoch: (json['slotsPerEpoch'] as num).toInt(),
+      leaderScheduleSlotOffset:
+          (json['leaderScheduleSlotOffset'] as num).toInt(),
       warmup: json['warmup'] as bool,
-      firstNormalEpoch: json['firstNormalEpoch'] as int,
-      firstNormalSlot: json['firstNormalSlot'] as int,
+      firstNormalEpoch: (json['firstNormalEpoch'] as num).toInt(),
+      firstNormalSlot: (json['firstNormalSlot'] as num).toInt(),
     );
 
 Map<String, dynamic> _$EpochScheduleToJson(EpochSchedule instance) =>

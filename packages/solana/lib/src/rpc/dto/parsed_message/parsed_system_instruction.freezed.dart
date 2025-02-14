@@ -12,7 +12,7 @@ part of 'parsed_system_instruction.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 ParsedSystemInstruction _$ParsedSystemInstructionFromJson(
     Map<String, dynamic> json) {
@@ -84,8 +84,13 @@ mixin _$ParsedSystemInstruction {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this ParsedSystemInstruction to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ParsedSystemInstructionCopyWith<ParsedSystemInstruction> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -110,6 +115,8 @@ class _$ParsedSystemInstructionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -148,6 +155,8 @@ class __$$ParsedSystemTransferInstructionImplCopyWithImpl<$Res>
       $Res Function(_$ParsedSystemTransferInstructionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -166,6 +175,8 @@ class __$$ParsedSystemTransferInstructionImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParsedSystemTransferInformationCopyWith<$Res> get info {
@@ -205,11 +216,13 @@ class _$ParsedSystemTransferInstructionImpl
             (identical(other.type, type) || other.type == type));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, info, type);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedSystemTransferInstructionImplCopyWith<
@@ -315,8 +328,11 @@ abstract class ParsedSystemTransferInstruction
   ParsedSystemTransferInformation get info;
   @override
   String get type;
+
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedSystemTransferInstructionImplCopyWith<
           _$ParsedSystemTransferInstructionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -346,6 +362,8 @@ class __$$ParsedSystemTransferCheckedInstructionImplCopyWithImpl<$Res>
       $Res Function(_$ParsedSystemTransferCheckedInstructionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -364,6 +382,8 @@ class __$$ParsedSystemTransferCheckedInstructionImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ParsedSystemTransferInformationCopyWith<$Res> get info {
@@ -403,11 +423,13 @@ class _$ParsedSystemTransferCheckedInstructionImpl
             (identical(other.type, type) || other.type == type));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, info, type);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedSystemTransferCheckedInstructionImplCopyWith<
@@ -516,8 +538,11 @@ abstract class ParsedSystemTransferCheckedInstruction
   ParsedSystemTransferInformation get info;
   @override
   String get type;
+
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedSystemTransferCheckedInstructionImplCopyWith<
           _$ParsedSystemTransferCheckedInstructionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -545,6 +570,8 @@ class __$$ParsedSystemUnsupportedInstructionImplCopyWithImpl<$Res>
       $Res Function(_$ParsedSystemUnsupportedInstructionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -585,11 +612,13 @@ class _$ParsedSystemUnsupportedInstructionImpl
             (identical(other.type, type) || other.type == type));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, type);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedSystemUnsupportedInstructionImplCopyWith<
@@ -694,8 +723,11 @@ abstract class ParsedSystemUnsupportedInstruction
 
   @override
   String get type;
+
+  /// Create a copy of ParsedSystemInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedSystemUnsupportedInstructionImplCopyWith<
           _$ParsedSystemUnsupportedInstructionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -712,8 +744,12 @@ mixin _$ParsedSystemTransferInformation {
   String get source => throw _privateConstructorUsedError;
   String get destination => throw _privateConstructorUsedError;
 
+  /// Serializes this ParsedSystemTransferInformation to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParsedSystemTransferInformation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ParsedSystemTransferInformationCopyWith<ParsedSystemTransferInformation>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -740,6 +776,8 @@ class _$ParsedSystemTransferInformationCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ParsedSystemTransferInformation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -786,6 +824,8 @@ class __$$ParsedSystemTransferInformationImplCopyWithImpl<$Res>
       $Res Function(_$ParsedSystemTransferInformationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedSystemTransferInformation
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -847,11 +887,13 @@ class _$ParsedSystemTransferInformationImpl
                 other.destination == destination));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, lamports, source, destination);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedSystemTransferInformation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedSystemTransferInformationImplCopyWith<
@@ -884,8 +926,11 @@ abstract class _ParsedSystemTransferInformation
   String get source;
   @override
   String get destination;
+
+  /// Create a copy of ParsedSystemTransferInformation
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedSystemTransferInformationImplCopyWith<
           _$ParsedSystemTransferInformationImpl>
       get copyWith => throw _privateConstructorUsedError;

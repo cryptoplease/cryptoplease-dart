@@ -7,9 +7,9 @@ part of 'supply.dart';
 // **************************************************************************
 
 Supply _$SupplyFromJson(Map<String, dynamic> json) => Supply(
-      total: json['total'] as int,
-      circulating: json['circulating'] as int,
-      nonCirculating: json['nonCirculating'] as int,
+      total: (json['total'] as num).toInt(),
+      circulating: (json['circulating'] as num).toInt(),
+      nonCirculating: (json['nonCirculating'] as num).toInt(),
       nonCirculatingAccounts: (json['nonCirculatingAccounts'] as List<dynamic>)
           .map((e) => e as String)
           .toList(),

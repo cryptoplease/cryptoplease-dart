@@ -12,7 +12,7 @@ part of 'notification_message.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 NotificationMessage _$NotificationMessageFromJson(Map<String, dynamic> json) {
   switch (json['method']) {
@@ -102,6 +102,8 @@ mixin _$NotificationMessage {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this NotificationMessage to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 }
 
@@ -121,6 +123,9 @@ class _$NotificationMessageCopyWithImpl<$Res, $Val extends NotificationMessage>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -140,6 +145,9 @@ class __$$UnsupportedNotificationImplCopyWithImpl<$Res>
       _$UnsupportedNotificationImpl _value,
       $Res Function(_$UnsupportedNotificationImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -167,7 +175,7 @@ class _$UnsupportedNotificationImpl extends _UnsupportedNotification {
             other is _$UnsupportedNotificationImpl);
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => runtimeType.hashCode;
 
@@ -296,6 +304,8 @@ class __$$AccountNotificationImplCopyWithImpl<$Res>
       $Res Function(_$AccountNotificationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -339,11 +349,13 @@ class _$AccountNotificationImpl extends AccountNotification {
             (identical(other.params, params) || other.params == params));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, params);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AccountNotificationImplCopyWith<_$AccountNotificationImpl> get copyWith =>
@@ -460,7 +472,10 @@ abstract class AccountNotification extends NotificationMessage {
       _$AccountNotificationImpl.fromJson;
 
   NotificationParams<Account> get params;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AccountNotificationImplCopyWith<_$AccountNotificationImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -482,6 +497,8 @@ class __$$LogsNotificationImplCopyWithImpl<$Res>
       $Res Function(_$LogsNotificationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -525,11 +542,13 @@ class _$LogsNotificationImpl extends LogsNotification {
             (identical(other.params, params) || other.params == params));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, params);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$LogsNotificationImplCopyWith<_$LogsNotificationImpl> get copyWith =>
@@ -646,7 +665,10 @@ abstract class LogsNotification extends NotificationMessage {
       _$LogsNotificationImpl.fromJson;
 
   NotificationParams<Logs> get params;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LogsNotificationImplCopyWith<_$LogsNotificationImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -668,6 +690,8 @@ class __$$ProgramNotificationImplCopyWithImpl<$Res>
       $Res Function(_$ProgramNotificationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -711,11 +735,13 @@ class _$ProgramNotificationImpl extends ProgramNotification {
             (identical(other.params, params) || other.params == params));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, params);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ProgramNotificationImplCopyWith<_$ProgramNotificationImpl> get copyWith =>
@@ -832,7 +858,10 @@ abstract class ProgramNotification extends NotificationMessage {
       _$ProgramNotificationImpl.fromJson;
 
   NotificationParams<dynamic> get params;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ProgramNotificationImplCopyWith<_$ProgramNotificationImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -855,6 +884,8 @@ class __$$SignatureNotificationImplCopyWithImpl<$Res>
       $Res Function(_$SignatureNotificationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -898,11 +929,13 @@ class _$SignatureNotificationImpl extends SignatureNotification {
             (identical(other.params, params) || other.params == params));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, params);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SignatureNotificationImplCopyWith<_$SignatureNotificationImpl>
@@ -1019,7 +1052,10 @@ abstract class SignatureNotification extends NotificationMessage {
       _$SignatureNotificationImpl.fromJson;
 
   NotificationParams<OptionalError> get params;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SignatureNotificationImplCopyWith<_$SignatureNotificationImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1041,6 +1077,8 @@ class __$$SlotNotificationImplCopyWithImpl<$Res>
       $Res Function(_$SlotNotificationImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1084,11 +1122,13 @@ class _$SlotNotificationImpl extends SlotNotification {
             (identical(other.params, params) || other.params == params));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, params);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SlotNotificationImplCopyWith<_$SlotNotificationImpl> get copyWith =>
@@ -1205,7 +1245,10 @@ abstract class SlotNotification extends NotificationMessage {
       _$SlotNotificationImpl.fromJson;
 
   NotificationParams<Slot> get params;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of NotificationMessage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SlotNotificationImplCopyWith<_$SlotNotificationImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

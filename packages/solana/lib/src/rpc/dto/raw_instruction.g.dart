@@ -8,9 +8,10 @@ part of 'raw_instruction.dart';
 
 RawInstruction _$RawInstructionFromJson(Map<String, dynamic> json) =>
     RawInstruction(
-      programIdIndex: json['programIdIndex'] as int,
-      accounts:
-          (json['accounts'] as List<dynamic>).map((e) => e as int).toList(),
+      programIdIndex: (json['programIdIndex'] as num).toInt(),
+      accounts: (json['accounts'] as List<dynamic>)
+          .map((e) => (e as num).toInt())
+          .toList(),
       data: json['data'] as String,
     );
 

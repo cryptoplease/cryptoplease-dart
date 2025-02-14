@@ -82,6 +82,8 @@ mixin _$ParsedAccountData {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this ParsedAccountData to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 }
 
@@ -101,6 +103,9 @@ class _$ParsedAccountDataCopyWithImpl<$Res, $Val extends ParsedAccountData>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -125,6 +130,8 @@ class __$$ParsedSplTokenProgramAccountDataImplCopyWithImpl<$Res>
       $Res Function(_$ParsedSplTokenProgramAccountDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -138,6 +145,8 @@ class __$$ParsedSplTokenProgramAccountDataImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SplTokenProgramAccountDataCopyWith<$Res> get parsed {
@@ -178,11 +187,13 @@ class _$ParsedSplTokenProgramAccountDataImpl
             (identical(other.parsed, parsed) || other.parsed == parsed));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, parsed);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedSplTokenProgramAccountDataImplCopyWith<
@@ -283,7 +294,10 @@ abstract class ParsedSplTokenProgramAccountData implements ParsedAccountData {
 
   @override
   SplTokenProgramAccountData get parsed;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedSplTokenProgramAccountDataImplCopyWith<
           _$ParsedSplTokenProgramAccountDataImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -311,6 +325,8 @@ class __$$ParsedSplToken2022ProgramAccountDataImplCopyWithImpl<$Res>
       $Res Function(_$ParsedSplToken2022ProgramAccountDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -324,6 +340,8 @@ class __$$ParsedSplToken2022ProgramAccountDataImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $SplTokenProgramAccountDataCopyWith<$Res> get parsed {
@@ -364,11 +382,13 @@ class _$ParsedSplToken2022ProgramAccountDataImpl
             (identical(other.parsed, parsed) || other.parsed == parsed));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, parsed);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedSplToken2022ProgramAccountDataImplCopyWith<
@@ -471,7 +491,10 @@ abstract class ParsedSplToken2022ProgramAccountData
 
   @override
   SplTokenProgramAccountData get parsed;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedSplToken2022ProgramAccountDataImplCopyWith<
           _$ParsedSplToken2022ProgramAccountDataImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -499,6 +522,8 @@ class __$$ParsedStakeProgramAccountDataImplCopyWithImpl<$Res>
       $Res Function(_$ParsedStakeProgramAccountDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -512,6 +537,8 @@ class __$$ParsedStakeProgramAccountDataImplCopyWithImpl<$Res>
     ));
   }
 
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $StakeProgramAccountDataCopyWith<$Res> get parsed {
@@ -551,11 +578,13 @@ class _$ParsedStakeProgramAccountDataImpl
             (identical(other.parsed, parsed) || other.parsed == parsed));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, parsed);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedStakeProgramAccountDataImplCopyWith<
@@ -656,7 +685,10 @@ abstract class ParsedStakeProgramAccountData implements ParsedAccountData {
 
   @override
   StakeProgramAccountData get parsed;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedStakeProgramAccountDataImplCopyWith<
           _$ParsedStakeProgramAccountDataImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -682,6 +714,8 @@ class __$$UnsupportedProgramAccountDataImplCopyWithImpl<$Res>
       $Res Function(_$UnsupportedProgramAccountDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -733,12 +767,14 @@ class _$UnsupportedProgramAccountDataImpl
             const DeepCollectionEquality().equals(other._parsed, _parsed));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_parsed));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$UnsupportedProgramAccountDataImplCopyWith<
@@ -838,7 +874,10 @@ abstract class UnsupportedProgramAccountData implements ParsedAccountData {
 
   @override
   Map<String, dynamic> get parsed;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParsedAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UnsupportedProgramAccountDataImplCopyWith<
           _$UnsupportedProgramAccountDataImpl>
       get copyWith => throw _privateConstructorUsedError;

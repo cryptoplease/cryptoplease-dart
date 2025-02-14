@@ -16,19 +16,12 @@ SimulateTransactionAccounts _$SimulateTransactionAccountsFromJson(
     );
 
 Map<String, dynamic> _$SimulateTransactionAccountsToJson(
-    SimulateTransactionAccounts instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('encoding', _$EncodingEnumMap[instance.encoding]);
-  writeNotNull('addresses', instance.addresses);
-  return val;
-}
+        SimulateTransactionAccounts instance) =>
+    <String, dynamic>{
+      if (_$EncodingEnumMap[instance.encoding] case final value?)
+        'encoding': value,
+      if (instance.addresses case final value?) 'addresses': value,
+    };
 
 const _$EncodingEnumMap = {
   Encoding.base64: 'base64',

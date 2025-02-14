@@ -9,7 +9,7 @@ part of 'json_rpc_exception.dart';
 JsonRpcException _$JsonRpcExceptionFromJson(Map<String, dynamic> json) =>
     JsonRpcException(
       json['message'] as String,
-      json['code'] as int,
+      (json['code'] as num).toInt(),
       json['data'],
     );
 

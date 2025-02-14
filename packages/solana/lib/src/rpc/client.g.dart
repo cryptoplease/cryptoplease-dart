@@ -7,22 +7,14 @@ part of 'client.dart';
 // **************************************************************************
 
 Map<String, dynamic> _$GetAccountInfoConfigToJson(
-    GetAccountInfoConfig instance) {
-  final val = <String, dynamic>{
-    'commitment': _$CommitmentEnumMap[instance.commitment]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('encoding', _$EncodingEnumMap[instance.encoding]);
-  writeNotNull('dataSlice', instance.dataSlice?.toJson());
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        GetAccountInfoConfig instance) =>
+    <String, dynamic>{
+      'commitment': _$CommitmentEnumMap[instance.commitment]!,
+      if (_$EncodingEnumMap[instance.encoding] case final value?)
+        'encoding': value,
+      if (instance.dataSlice?.toJson() case final value?) 'dataSlice': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 const _$CommitmentEnumMap = {
   Commitment.processed: 'processed',
@@ -37,38 +29,26 @@ const _$EncodingEnumMap = {
   Encoding.json: 'json',
 };
 
-Map<String, dynamic> _$GetBalanceConfigToJson(GetBalanceConfig instance) {
-  final val = <String, dynamic>{};
+Map<String, dynamic> _$GetBalanceConfigToJson(GetBalanceConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
-
-Map<String, dynamic> _$GetBlockConfigToJson(GetBlockConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('encoding', _$EncodingEnumMap[instance.encoding]);
-  writeNotNull('transactionDetails',
-      _$TransactionDetailLevelEnumMap[instance.transactionDetails]);
-  writeNotNull('rewards', instance.rewards);
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('maxSupportedTransactionVersion',
-      instance.maxSupportedTransactionVersion);
-  return val;
-}
+Map<String, dynamic> _$GetBlockConfigToJson(GetBlockConfig instance) =>
+    <String, dynamic>{
+      if (_$EncodingEnumMap[instance.encoding] case final value?)
+        'encoding': value,
+      if (_$TransactionDetailLevelEnumMap[instance.transactionDetails]
+          case final value?)
+        'transactionDetails': value,
+      if (instance.rewards case final value?) 'rewards': value,
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.maxSupportedTransactionVersion case final value?)
+        'maxSupportedTransactionVersion': value,
+    };
 
 const _$TransactionDetailLevelEnumMap = {
   TransactionDetailLevel.none: 'none',
@@ -77,136 +57,74 @@ const _$TransactionDetailLevelEnumMap = {
 };
 
 Map<String, dynamic> _$GetBlockHeightConfigToJson(
-    GetBlockHeightConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        GetBlockHeightConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$GetBlockProductionConfigToJson(
-    GetBlockProductionConfig instance) {
-  final val = <String, dynamic>{};
+        GetBlockProductionConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.range?.toJson() case final value?) 'range': value,
+      if (instance.identity case final value?) 'identity': value,
+    };
 
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('range', instance.range?.toJson());
-  writeNotNull('identity', instance.identity);
-  return val;
-}
-
-Map<String, dynamic> _$GetBlocksConfigToJson(GetBlocksConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  return val;
-}
+Map<String, dynamic> _$GetBlocksConfigToJson(GetBlocksConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+    };
 
 Map<String, dynamic> _$GetBlocksWithLimitConfigToJson(
-    GetBlocksWithLimitConfig instance) {
-  final val = <String, dynamic>{};
+        GetBlocksWithLimitConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+    };
 
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  return val;
-}
-
-Map<String, dynamic> _$GetEpochInfoConfigToJson(GetEpochInfoConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+Map<String, dynamic> _$GetEpochInfoConfigToJson(GetEpochInfoConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$GetFeeForMessageConfigToJson(
-    GetFeeForMessageConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        GetFeeForMessageConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$GetInflationGovernorConfigToJson(
-    GetInflationGovernorConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  return val;
-}
+        GetInflationGovernorConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+    };
 
 Map<String, dynamic> _$GetInflationRewardConfigToJson(
-    GetInflationRewardConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('epoch', instance.epoch);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        GetInflationRewardConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.epoch case final value?) 'epoch': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$GetLargestAccountsConfigToJson(
-    GetLargestAccountsConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('filter', _$CirculationStatusEnumMap[instance.filter]);
-  return val;
-}
+        GetLargestAccountsConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (_$CirculationStatusEnumMap[instance.filter] case final value?)
+        'filter': value,
+    };
 
 const _$CirculationStatusEnumMap = {
   CirculationStatus.circulating: 'circulating',
@@ -214,367 +132,205 @@ const _$CirculationStatusEnumMap = {
 };
 
 Map<String, dynamic> _$GetLatestBlockhashConfigToJson(
-    GetLatestBlockhashConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        GetLatestBlockhashConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$GetLeaderScheduleConfigToJson(
-    GetLeaderScheduleConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('identity', instance.identity);
-  return val;
-}
+        GetLeaderScheduleConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.identity case final value?) 'identity': value,
+    };
 
 Map<String, dynamic> _$GetMinimumBalanceForRentExemptionConfigToJson(
-    GetMinimumBalanceForRentExemptionConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  return val;
-}
+        GetMinimumBalanceForRentExemptionConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+    };
 
 Map<String, dynamic> _$GetMultipleAccountsConfigToJson(
-    GetMultipleAccountsConfig instance) {
-  final val = <String, dynamic>{
-    'commitment': _$CommitmentEnumMap[instance.commitment]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('encoding', _$EncodingEnumMap[instance.encoding]);
-  writeNotNull('dataSlice', instance.dataSlice?.toJson());
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        GetMultipleAccountsConfig instance) =>
+    <String, dynamic>{
+      'commitment': _$CommitmentEnumMap[instance.commitment]!,
+      if (_$EncodingEnumMap[instance.encoding] case final value?)
+        'encoding': value,
+      if (instance.dataSlice?.toJson() case final value?) 'dataSlice': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$GetProgramAccountsConfigToJson(
-    GetProgramAccountsConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  val['encoding'] = _$EncodingEnumMap[instance.encoding]!;
-  writeNotNull('dataSlice', instance.dataSlice?.toJson());
-  writeNotNull('filters', instance.filters?.map((e) => e.toJson()).toList());
-  writeNotNull('withContext', instance.withContext);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        GetProgramAccountsConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      'encoding': _$EncodingEnumMap[instance.encoding]!,
+      if (instance.dataSlice?.toJson() case final value?) 'dataSlice': value,
+      if (instance.filters?.map((e) => e.toJson()).toList() case final value?)
+        'filters': value,
+      if (instance.withContext case final value?) 'withContext': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$GetSignaturesForAddressConfigToJson(
-    GetSignaturesForAddressConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('limit', instance.limit);
-  writeNotNull('before', instance.before);
-  writeNotNull('until', instance.until);
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        GetSignaturesForAddressConfig instance) =>
+    <String, dynamic>{
+      if (instance.limit case final value?) 'limit': value,
+      if (instance.before case final value?) 'before': value,
+      if (instance.until case final value?) 'until': value,
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$GetSignatureStatusesConfigToJson(
-    GetSignatureStatusesConfig instance) {
-  final val = <String, dynamic>{};
+        GetSignatureStatusesConfig instance) =>
+    <String, dynamic>{
+      if (instance.searchTransactionHistory case final value?)
+        'searchTransactionHistory': value,
+    };
 
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
+Map<String, dynamic> _$GetSlotConfigToJson(GetSlotConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
-  writeNotNull('searchTransactionHistory', instance.searchTransactionHistory);
-  return val;
-}
-
-Map<String, dynamic> _$GetSlotConfigToJson(GetSlotConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
-
-Map<String, dynamic> _$GetSlotLeaderConfigToJson(GetSlotLeaderConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+Map<String, dynamic> _$GetSlotLeaderConfigToJson(
+        GetSlotLeaderConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$GetStakeMinimumDelegationConfigToJson(
-    GetStakeMinimumDelegationConfig instance) {
-  final val = <String, dynamic>{};
+        GetStakeMinimumDelegationConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+    };
 
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  return val;
-}
-
-Map<String, dynamic> _$GetSupplyConfigToJson(GetSupplyConfig instance) {
-  final val = <String, dynamic>{
-    'commitment': _$CommitmentEnumMap[instance.commitment]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('excludeNonCirculatingAccountsList',
-      instance.excludeNonCirculatingAccountsList);
-  return val;
-}
+Map<String, dynamic> _$GetSupplyConfigToJson(GetSupplyConfig instance) =>
+    <String, dynamic>{
+      'commitment': _$CommitmentEnumMap[instance.commitment]!,
+      if (instance.excludeNonCirculatingAccountsList case final value?)
+        'excludeNonCirculatingAccountsList': value,
+    };
 
 Map<String, dynamic> _$GetTokenAccountBalanceConfigToJson(
-    GetTokenAccountBalanceConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  return val;
-}
+        GetTokenAccountBalanceConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+    };
 
 Map<String, dynamic> _$GetTokenAccountsByDelegateConfigToJson(
-    GetTokenAccountsByDelegateConfig instance) {
-  final val = <String, dynamic>{
-    'commitment': _$CommitmentEnumMap[instance.commitment]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('encoding', _$EncodingEnumMap[instance.encoding]);
-  writeNotNull('dataSlice', instance.dataSlice?.toJson());
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        GetTokenAccountsByDelegateConfig instance) =>
+    <String, dynamic>{
+      'commitment': _$CommitmentEnumMap[instance.commitment]!,
+      if (_$EncodingEnumMap[instance.encoding] case final value?)
+        'encoding': value,
+      if (instance.dataSlice?.toJson() case final value?) 'dataSlice': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$GetTokenAccountsByOwnerConfigToJson(
-    GetTokenAccountsByOwnerConfig instance) {
-  final val = <String, dynamic>{
-    'commitment': _$CommitmentEnumMap[instance.commitment]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('encoding', _$EncodingEnumMap[instance.encoding]);
-  writeNotNull('dataSlice', instance.dataSlice?.toJson());
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        GetTokenAccountsByOwnerConfig instance) =>
+    <String, dynamic>{
+      'commitment': _$CommitmentEnumMap[instance.commitment]!,
+      if (_$EncodingEnumMap[instance.encoding] case final value?)
+        'encoding': value,
+      if (instance.dataSlice?.toJson() case final value?) 'dataSlice': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$GetTokenLargestAccountsConfigToJson(
-    GetTokenLargestAccountsConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  return val;
-}
+        GetTokenLargestAccountsConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+    };
 
 Map<String, dynamic> _$GetTokenSupplyConfigToJson(
-    GetTokenSupplyConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  return val;
-}
+        GetTokenSupplyConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+    };
 
 Map<String, dynamic> _$GetTransactionConfigToJson(
-    GetTransactionConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('encoding', _$EncodingEnumMap[instance.encoding]);
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('maxSupportedTransactionVersion',
-      instance.maxSupportedTransactionVersion);
-  return val;
-}
+        GetTransactionConfig instance) =>
+    <String, dynamic>{
+      if (_$EncodingEnumMap[instance.encoding] case final value?)
+        'encoding': value,
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.maxSupportedTransactionVersion case final value?)
+        'maxSupportedTransactionVersion': value,
+    };
 
 Map<String, dynamic> _$GetTransactionCountConfigToJson(
-    GetTransactionCountConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        GetTransactionCountConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$GetVoteAccountsConfigToJson(
-    GetVoteAccountsConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('votePubKey', instance.votePubKey);
-  writeNotNull('keepUnstakedDelinquents', instance.keepUnstakedDelinquents);
-  writeNotNull('delinquentSlotDistance', instance.delinquentSlotDistance);
-  return val;
-}
+        GetVoteAccountsConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.votePubKey case final value?) 'votePubKey': value,
+      if (instance.keepUnstakedDelinquents case final value?)
+        'keepUnstakedDelinquents': value,
+      if (instance.delinquentSlotDistance case final value?)
+        'delinquentSlotDistance': value,
+    };
 
 Map<String, dynamic> _$IsBlockhashValidConfigToJson(
-    IsBlockhashValidConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        IsBlockhashValidConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$RequestAirdropConfigToJson(
-    RequestAirdropConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  return val;
-}
+        RequestAirdropConfig instance) =>
+    <String, dynamic>{
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+    };
 
 Map<String, dynamic> _$SendTransactionConfigToJson(
-    SendTransactionConfig instance) {
-  final val = <String, dynamic>{
-    'encoding': _$EncodingEnumMap[instance.encoding]!,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull(
-      'preflightCommitment', _$CommitmentEnumMap[instance.preflightCommitment]);
-  writeNotNull('skipPreflight', instance.skipPreflight);
-  writeNotNull('maxRetries', instance.maxRetries);
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        SendTransactionConfig instance) =>
+    <String, dynamic>{
+      'encoding': _$EncodingEnumMap[instance.encoding]!,
+      if (_$CommitmentEnumMap[instance.preflightCommitment] case final value?)
+        'preflightCommitment': value,
+      if (instance.skipPreflight case final value?) 'skipPreflight': value,
+      if (instance.maxRetries case final value?) 'maxRetries': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };
 
 Map<String, dynamic> _$SimulateTransactionConfigToJson(
-    SimulateTransactionConfig instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('sigVerify', instance.sigVerify);
-  val['encoding'] = _$EncodingEnumMap[instance.encoding]!;
-  writeNotNull('commitment', _$CommitmentEnumMap[instance.commitment]);
-  writeNotNull('replaceRecentBlockhash', instance.replaceRecentBlockhash);
-  writeNotNull('accounts', instance.accounts?.toJson());
-  writeNotNull('minContextSlot', instance.minContextSlot);
-  return val;
-}
+        SimulateTransactionConfig instance) =>
+    <String, dynamic>{
+      if (instance.sigVerify case final value?) 'sigVerify': value,
+      'encoding': _$EncodingEnumMap[instance.encoding]!,
+      if (_$CommitmentEnumMap[instance.commitment] case final value?)
+        'commitment': value,
+      if (instance.replaceRecentBlockhash case final value?)
+        'replaceRecentBlockhash': value,
+      if (instance.accounts?.toJson() case final value?) 'accounts': value,
+      if (instance.minContextSlot case final value?) 'minContextSlot': value,
+    };

@@ -12,7 +12,7 @@ part of 'token_program_account_data.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 SplTokenProgramAccountData _$SplTokenProgramAccountDataFromJson(
     Map<String, dynamic> json) {
@@ -86,8 +86,13 @@ mixin _$SplTokenProgramAccountData {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this SplTokenProgramAccountData to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SplTokenProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SplTokenProgramAccountDataCopyWith<SplTokenProgramAccountData>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -113,6 +118,8 @@ class _$SplTokenProgramAccountDataCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SplTokenProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -147,6 +154,8 @@ class __$$TokenAccountDataImplCopyWithImpl<$Res>
       $Res Function(_$TokenAccountDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SplTokenProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -203,11 +212,13 @@ class _$TokenAccountDataImpl implements TokenAccountData {
                 other.accountType == accountType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, info, type, accountType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SplTokenProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TokenAccountDataImplCopyWith<_$TokenAccountDataImpl> get copyWith =>
@@ -315,8 +326,11 @@ abstract class TokenAccountData implements SplTokenProgramAccountData {
   @override
   String get type;
   String? get accountType;
+
+  /// Create a copy of SplTokenProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TokenAccountDataImplCopyWith<_$TokenAccountDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -340,6 +354,8 @@ class __$$MintAccountDataImplCopyWithImpl<$Res>
       _$MintAccountDataImpl _value, $Res Function(_$MintAccountDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SplTokenProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -396,11 +412,13 @@ class _$MintAccountDataImpl implements MintAccountData {
                 other.accountType == accountType));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, info, type, accountType);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SplTokenProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MintAccountDataImplCopyWith<_$MintAccountDataImpl> get copyWith =>
@@ -508,8 +526,11 @@ abstract class MintAccountData implements SplTokenProgramAccountData {
   @override
   String get type;
   String? get accountType;
+
+  /// Create a copy of SplTokenProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MintAccountDataImplCopyWith<_$MintAccountDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -534,6 +555,8 @@ class __$$UnknownAccountDataImplCopyWithImpl<$Res>
       $Res Function(_$UnknownAccountDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SplTokenProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -572,11 +595,13 @@ class _$UnknownAccountDataImpl implements UnknownAccountData {
             (identical(other.type, type) || other.type == type));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, type);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SplTokenProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$UnknownAccountDataImplCopyWith<_$UnknownAccountDataImpl> get copyWith =>
@@ -680,8 +705,11 @@ abstract class UnknownAccountData implements SplTokenProgramAccountData {
 
   @override
   String get type;
+
+  /// Create a copy of SplTokenProgramAccountData
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UnknownAccountDataImplCopyWith<_$UnknownAccountDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

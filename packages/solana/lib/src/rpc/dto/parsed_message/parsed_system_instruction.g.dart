@@ -53,7 +53,7 @@ Map<String, dynamic> _$$ParsedSystemUnsupportedInstructionImplToJson(
 _$ParsedSystemTransferInformationImpl
     _$$ParsedSystemTransferInformationImplFromJson(Map<String, dynamic> json) =>
         _$ParsedSystemTransferInformationImpl(
-          lamports: json['lamports'] as int,
+          lamports: (json['lamports'] as num).toInt(),
           source: json['source'] as String,
           destination: json['destination'] as String,
         );

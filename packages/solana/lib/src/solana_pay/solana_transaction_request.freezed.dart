@@ -12,7 +12,7 @@ part of 'solana_transaction_request.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$SolanaTransactionRequest {
@@ -20,7 +20,9 @@ mixin _$SolanaTransactionRequest {
   String? get label => throw _privateConstructorUsedError;
   String? get message => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SolanaTransactionRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SolanaTransactionRequestCopyWith<SolanaTransactionRequest> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -45,6 +47,8 @@ class _$SolanaTransactionRequestCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SolanaTransactionRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -91,6 +95,8 @@ class __$$SolanaTransactionRequestImplCopyWithImpl<$Res>
       $Res Function(_$SolanaTransactionRequestImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SolanaTransactionRequest
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -147,7 +153,9 @@ class _$SolanaTransactionRequestImpl extends _SolanaTransactionRequest {
   @override
   int get hashCode => Object.hash(runtimeType, link, label, message);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SolanaTransactionRequest
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SolanaTransactionRequestImplCopyWith<_$SolanaTransactionRequestImpl>
@@ -168,8 +176,11 @@ abstract class _SolanaTransactionRequest extends SolanaTransactionRequest {
   String? get label;
   @override
   String? get message;
+
+  /// Create a copy of SolanaTransactionRequest
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SolanaTransactionRequestImplCopyWith<_$SolanaTransactionRequestImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

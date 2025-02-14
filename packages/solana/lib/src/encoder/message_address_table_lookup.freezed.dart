@@ -12,7 +12,7 @@ part of 'message_address_table_lookup.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$MessageAddressTableLookup {
@@ -20,7 +20,9 @@ mixin _$MessageAddressTableLookup {
   List<int> get writableIndexes => throw _privateConstructorUsedError;
   List<int> get readonlyIndexes => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MessageAddressTableLookup
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MessageAddressTableLookupCopyWith<MessageAddressTableLookup> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -48,6 +50,8 @@ class _$MessageAddressTableLookupCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MessageAddressTableLookup
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -97,6 +101,8 @@ class __$$MessageAddressTableLookupImplCopyWithImpl<$Res>
       $Res Function(_$MessageAddressTableLookupImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MessageAddressTableLookup
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -174,7 +180,9 @@ class _$MessageAddressTableLookupImpl implements _MessageAddressTableLookup {
       const DeepCollectionEquality().hash(_writableIndexes),
       const DeepCollectionEquality().hash(_readonlyIndexes));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MessageAddressTableLookup
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MessageAddressTableLookupImplCopyWith<_$MessageAddressTableLookupImpl>
@@ -195,8 +203,11 @@ abstract class _MessageAddressTableLookup implements MessageAddressTableLookup {
   List<int> get writableIndexes;
   @override
   List<int> get readonlyIndexes;
+
+  /// Create a copy of MessageAddressTableLookup
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MessageAddressTableLookupImplCopyWith<_$MessageAddressTableLookupImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

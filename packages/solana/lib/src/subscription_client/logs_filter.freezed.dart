@@ -12,7 +12,7 @@ part of 'logs_filter.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$LogsFilter {
@@ -78,6 +78,9 @@ class _$LogsFilterCopyWithImpl<$Res, $Val extends LogsFilter>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of LogsFilter
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -94,6 +97,9 @@ class __$$LogsFilterAllImplCopyWithImpl<$Res>
   __$$LogsFilterAllImplCopyWithImpl(
       _$LogsFilterAllImpl _value, $Res Function(_$LogsFilterAllImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of LogsFilter
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -204,6 +210,9 @@ class __$$LosgFilterAllWithVotesImplCopyWithImpl<$Res>
       _$LosgFilterAllWithVotesImpl _value,
       $Res Function(_$LosgFilterAllWithVotesImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of LogsFilter
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -316,6 +325,8 @@ class __$$LogsFilterMentionsImplCopyWithImpl<$Res>
       $Res Function(_$LogsFilterMentionsImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LogsFilter
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -361,7 +372,9 @@ class _$LogsFilterMentionsImpl implements _LogsFilterMentions {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_pubKeys));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LogsFilter
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$LogsFilterMentionsImplCopyWith<_$LogsFilterMentionsImpl> get copyWith =>
@@ -442,7 +455,10 @@ abstract class _LogsFilterMentions implements LogsFilter {
       _$LogsFilterMentionsImpl;
 
   List<String> get pubKeys;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of LogsFilter
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LogsFilterMentionsImplCopyWith<_$LogsFilterMentionsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

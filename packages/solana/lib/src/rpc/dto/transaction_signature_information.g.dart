@@ -10,10 +10,10 @@ TransactionSignatureInformation _$TransactionSignatureInformationFromJson(
         Map<String, dynamic> json) =>
     TransactionSignatureInformation(
       signature: json['signature'] as String,
-      slot: json['slot'] as int,
+      slot: (json['slot'] as num).toInt(),
       err: json['err'] as Map<String, dynamic>?,
       memo: json['memo'] as String?,
-      blockTime: json['blockTime'] as int?,
+      blockTime: (json['blockTime'] as num?)?.toInt(),
       confirmationStatus:
           $enumDecodeNullable(_$CommitmentEnumMap, json['confirmationStatus']),
     );

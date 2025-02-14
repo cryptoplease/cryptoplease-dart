@@ -12,7 +12,7 @@ part of 'parsed_spl_token_instruction.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 ParsedSplTokenInstruction _$ParsedSplTokenInstructionFromJson(
     Map<String, dynamic> json) {
@@ -81,8 +81,13 @@ mixin _$ParsedSplTokenInstruction {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  /// Serializes this ParsedSplTokenInstruction to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ParsedSplTokenInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ParsedSplTokenInstructionCopyWith<ParsedSplTokenInstruction> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -107,6 +112,8 @@ class _$ParsedSplTokenInstructionCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ParsedSplTokenInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -143,6 +150,8 @@ class __$$ParsedSplTokenTransferInstructionImplCopyWithImpl<$Res>
       $Res Function(_$ParsedSplTokenTransferInstructionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedSplTokenInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -192,11 +201,13 @@ class _$ParsedSplTokenTransferInstructionImpl
             (identical(other.type, type) || other.type == type));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, info, type);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedSplTokenInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedSplTokenTransferInstructionImplCopyWith<
@@ -300,8 +311,11 @@ abstract class ParsedSplTokenTransferInstruction
   SplTokenTransferInfo get info;
   @override
   String get type;
+
+  /// Create a copy of ParsedSplTokenInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedSplTokenTransferInstructionImplCopyWith<
           _$ParsedSplTokenTransferInstructionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -329,6 +343,8 @@ class __$$ParsedSplTokenTransferCheckedInstructionImplCopyWithImpl<$Res>
       $Res Function(_$ParsedSplTokenTransferCheckedInstructionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedSplTokenInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -378,11 +394,13 @@ class _$ParsedSplTokenTransferCheckedInstructionImpl
             (identical(other.type, type) || other.type == type));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, info, type);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedSplTokenInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedSplTokenTransferCheckedInstructionImplCopyWith<
@@ -488,8 +506,11 @@ abstract class ParsedSplTokenTransferCheckedInstruction
   SplTokenTransferCheckedInfo get info;
   @override
   String get type;
+
+  /// Create a copy of ParsedSplTokenInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedSplTokenTransferCheckedInstructionImplCopyWith<
           _$ParsedSplTokenTransferCheckedInstructionImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -517,6 +538,8 @@ class __$$ParsedSplTokenGenericInstructionImplCopyWithImpl<$Res>
       $Res Function(_$ParsedSplTokenGenericInstructionImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParsedSplTokenInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -566,12 +589,14 @@ class _$ParsedSplTokenGenericInstructionImpl
             (identical(other.type, type) || other.type == type));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(info), type);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParsedSplTokenInstruction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParsedSplTokenGenericInstructionImplCopyWith<
@@ -674,8 +699,11 @@ abstract class ParsedSplTokenGenericInstruction
   dynamic get info;
   @override
   String get type;
+
+  /// Create a copy of ParsedSplTokenInstruction
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParsedSplTokenGenericInstructionImplCopyWith<
           _$ParsedSplTokenGenericInstructionImpl>
       get copyWith => throw _privateConstructorUsedError;

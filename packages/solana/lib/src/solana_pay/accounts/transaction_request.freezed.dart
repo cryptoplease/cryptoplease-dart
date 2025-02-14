@@ -12,7 +12,7 @@ part of 'transaction_request.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 TransactionRequestInfo _$TransactionRequestInfoFromJson(
     Map<String, dynamic> json) {
@@ -24,8 +24,12 @@ mixin _$TransactionRequestInfo {
   String get label => throw _privateConstructorUsedError;
   String get icon => throw _privateConstructorUsedError;
 
+  /// Serializes this TransactionRequestInfo to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of TransactionRequestInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $TransactionRequestInfoCopyWith<TransactionRequestInfo> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -50,6 +54,8 @@ class _$TransactionRequestInfoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of TransactionRequestInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -91,6 +97,8 @@ class __$$TransactionRequestInfoImplCopyWithImpl<$Res>
       $Res Function(_$TransactionRequestInfoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of TransactionRequestInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -137,11 +145,13 @@ class _$TransactionRequestInfoImpl implements _TransactionRequestInfo {
             (identical(other.icon, icon) || other.icon == icon));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, label, icon);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of TransactionRequestInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TransactionRequestInfoImplCopyWith<_$TransactionRequestInfoImpl>
@@ -168,8 +178,11 @@ abstract class _TransactionRequestInfo implements TransactionRequestInfo {
   String get label;
   @override
   String get icon;
+
+  /// Create a copy of TransactionRequestInfo
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TransactionRequestInfoImplCopyWith<_$TransactionRequestInfoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -185,8 +198,12 @@ mixin _$TransactionRequestResponse {
   String? get message => throw _privateConstructorUsedError;
   String? get redirect => throw _privateConstructorUsedError;
 
+  /// Serializes this TransactionRequestResponse to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of TransactionRequestResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $TransactionRequestResponseCopyWith<TransactionRequestResponse>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -212,6 +229,8 @@ class _$TransactionRequestResponseCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of TransactionRequestResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -258,6 +277,8 @@ class __$$TransactionRequestResponseImplCopyWithImpl<$Res>
       $Res Function(_$TransactionRequestResponseImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of TransactionRequestResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -316,11 +337,13 @@ class _$TransactionRequestResponseImpl implements _TransactionRequestResponse {
                 other.redirect == redirect));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, transaction, message, redirect);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of TransactionRequestResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TransactionRequestResponseImplCopyWith<_$TransactionRequestResponseImpl>
@@ -351,8 +374,11 @@ abstract class _TransactionRequestResponse
   String? get message;
   @override
   String? get redirect;
+
+  /// Create a copy of TransactionRequestResponse
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TransactionRequestResponseImplCopyWith<_$TransactionRequestResponseImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

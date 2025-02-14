@@ -28,8 +28,12 @@ mixin _$SwapRouteRequestDto {
   String get userAccount => throw _privateConstructorUsedError;
   bool get asLegacyTx => throw _privateConstructorUsedError;
 
+  /// Serializes this SwapRouteRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SwapRouteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SwapRouteRequestDtoCopyWith<SwapRouteRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -60,6 +64,8 @@ class _$SwapRouteRequestDtoCopyWithImpl<$Res, $Val extends SwapRouteRequestDto>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SwapRouteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -130,6 +136,8 @@ class __$$SwapRouteRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$SwapRouteRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SwapRouteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -229,12 +237,14 @@ class _$SwapRouteRequestDtoImpl implements _SwapRouteRequestDto {
                 other.asLegacyTx == asLegacyTx));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, inputToken, outputToken, amount,
       match, slippage, userAccount, asLegacyTx);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SwapRouteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SwapRouteRequestDtoImplCopyWith<_$SwapRouteRequestDtoImpl> get copyWith =>
@@ -276,8 +286,11 @@ abstract class _SwapRouteRequestDto implements SwapRouteRequestDto {
   String get userAccount;
   @override
   bool get asLegacyTx;
+
+  /// Create a copy of SwapRouteRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SwapRouteRequestDtoImplCopyWith<_$SwapRouteRequestDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -295,8 +308,12 @@ mixin _$SwapRouteResponseDto {
   int get feeInUsdc => throw _privateConstructorUsedError;
   BigInt get slot => throw _privateConstructorUsedError;
 
+  /// Serializes this SwapRouteResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SwapRouteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SwapRouteResponseDtoCopyWith<SwapRouteResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -327,6 +344,8 @@ class _$SwapRouteResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SwapRouteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -391,6 +410,8 @@ class __$$SwapRouteResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$SwapRouteResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SwapRouteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -479,12 +500,14 @@ class _$SwapRouteResponseDtoImpl implements _SwapRouteResponseDto {
             (identical(other.slot, slot) || other.slot == slot));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, inAmount, outAmount, amount, encodedTx, feeInUsdc, slot);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SwapRouteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SwapRouteResponseDtoImplCopyWith<_$SwapRouteResponseDtoImpl>
@@ -524,8 +547,11 @@ abstract class _SwapRouteResponseDto implements SwapRouteResponseDto {
   int get feeInUsdc;
   @override
   BigInt get slot;
+
+  /// Create a copy of SwapRouteResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SwapRouteResponseDtoImplCopyWith<_$SwapRouteResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

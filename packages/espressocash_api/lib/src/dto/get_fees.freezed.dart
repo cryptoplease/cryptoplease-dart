@@ -27,8 +27,12 @@ mixin _$GetFeesResponseDto {
   WithdrawFeeDto get withdrawFeePercentage =>
       throw _privateConstructorUsedError;
 
+  /// Serializes this GetFeesResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GetFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GetFeesResponseDtoCopyWith<GetFeesResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -60,6 +64,8 @@ class _$GetFeesResponseDtoCopyWithImpl<$Res, $Val extends GetFeesResponseDto>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GetFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -93,6 +99,8 @@ class _$GetFeesResponseDtoCopyWithImpl<$Res, $Val extends GetFeesResponseDto>
     ) as $Val);
   }
 
+  /// Create a copy of GetFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $DirectPaymentFeeDtoCopyWith<$Res> get directPayment {
@@ -101,6 +109,8 @@ class _$GetFeesResponseDtoCopyWithImpl<$Res, $Val extends GetFeesResponseDto>
     });
   }
 
+  /// Create a copy of GetFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $WithdrawFeeDtoCopyWith<$Res> get withdrawFeePercentage {
@@ -139,6 +149,8 @@ class __$$GetFeesResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$GetFeesResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GetFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -220,12 +232,14 @@ class _$GetFeesResponseDtoImpl implements _GetFeesResponseDto {
                 other.withdrawFeePercentage == withdrawFeePercentage));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, directPayment, escrowPayment,
       escrowPaymentAtaFee, splitKeyPayment, withdrawFeePercentage);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GetFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GetFeesResponseDtoImplCopyWith<_$GetFeesResponseDtoImpl> get copyWith =>
@@ -261,8 +275,11 @@ abstract class _GetFeesResponseDto implements GetFeesResponseDto {
   int get splitKeyPayment;
   @override
   WithdrawFeeDto get withdrawFeePercentage;
+
+  /// Create a copy of GetFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GetFeesResponseDtoImplCopyWith<_$GetFeesResponseDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -276,8 +293,12 @@ mixin _$DirectPaymentFeeDto {
   int get ataExists => throw _privateConstructorUsedError;
   int get ataDoesNotExist => throw _privateConstructorUsedError;
 
+  /// Serializes this DirectPaymentFeeDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DirectPaymentFeeDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DirectPaymentFeeDtoCopyWith<DirectPaymentFeeDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -301,6 +322,8 @@ class _$DirectPaymentFeeDtoCopyWithImpl<$Res, $Val extends DirectPaymentFeeDto>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DirectPaymentFeeDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -339,6 +362,8 @@ class __$$DirectPaymentFeeDtoImplCopyWithImpl<$Res>
       $Res Function(_$DirectPaymentFeeDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DirectPaymentFeeDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -388,11 +413,13 @@ class _$DirectPaymentFeeDtoImpl implements _DirectPaymentFeeDto {
                 other.ataDoesNotExist == ataDoesNotExist));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, ataExists, ataDoesNotExist);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DirectPaymentFeeDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DirectPaymentFeeDtoImplCopyWith<_$DirectPaymentFeeDtoImpl> get copyWith =>
@@ -419,8 +446,11 @@ abstract class _DirectPaymentFeeDto implements DirectPaymentFeeDto {
   int get ataExists;
   @override
   int get ataDoesNotExist;
+
+  /// Create a copy of DirectPaymentFeeDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DirectPaymentFeeDtoImplCopyWith<_$DirectPaymentFeeDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -437,8 +467,12 @@ mixin _$WithdrawFeeDto {
   double get coinflow => throw _privateConstructorUsedError;
   double get guardarian => throw _privateConstructorUsedError;
 
+  /// Serializes this WithdrawFeeDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of WithdrawFeeDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $WithdrawFeeDtoCopyWith<WithdrawFeeDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -467,6 +501,8 @@ class _$WithdrawFeeDtoCopyWithImpl<$Res, $Val extends WithdrawFeeDto>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of WithdrawFeeDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -525,6 +561,8 @@ class __$$WithdrawFeeDtoImplCopyWithImpl<$Res>
       _$WithdrawFeeDtoImpl _value, $Res Function(_$WithdrawFeeDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of WithdrawFeeDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -608,12 +646,14 @@ class _$WithdrawFeeDtoImpl implements _WithdrawFeeDto {
                 other.guardarian == guardarian));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, scalex, kado, rampNetwork, coinflow, guardarian);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of WithdrawFeeDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$WithdrawFeeDtoImplCopyWith<_$WithdrawFeeDtoImpl> get copyWith =>
@@ -649,8 +689,11 @@ abstract class _WithdrawFeeDto implements WithdrawFeeDto {
   double get coinflow;
   @override
   double get guardarian;
+
+  /// Create a copy of WithdrawFeeDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$WithdrawFeeDtoImplCopyWith<_$WithdrawFeeDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

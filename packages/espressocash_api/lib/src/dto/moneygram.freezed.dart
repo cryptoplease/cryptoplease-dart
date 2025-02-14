@@ -23,8 +23,12 @@ MoneygramChallengeSignRequestDto _$MoneygramChallengeSignRequestDtoFromJson(
 mixin _$MoneygramChallengeSignRequestDto {
   String get signedTx => throw _privateConstructorUsedError;
 
+  /// Serializes this MoneygramChallengeSignRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MoneygramChallengeSignRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MoneygramChallengeSignRequestDtoCopyWith<MoneygramChallengeSignRequestDto>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -51,6 +55,8 @@ class _$MoneygramChallengeSignRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MoneygramChallengeSignRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +93,8 @@ class __$$MoneygramChallengeSignRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$MoneygramChallengeSignRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MoneygramChallengeSignRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -128,11 +136,13 @@ class _$MoneygramChallengeSignRequestDtoImpl
                 other.signedTx == signedTx));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, signedTx);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MoneygramChallengeSignRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MoneygramChallengeSignRequestDtoImplCopyWith<
@@ -160,8 +170,11 @@ abstract class _MoneygramChallengeSignRequestDto
 
   @override
   String get signedTx;
+
+  /// Create a copy of MoneygramChallengeSignRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MoneygramChallengeSignRequestDtoImplCopyWith<
           _$MoneygramChallengeSignRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -176,8 +189,12 @@ MoneygramChallengeSignResponseDto _$MoneygramChallengeSignResponseDtoFromJson(
 mixin _$MoneygramChallengeSignResponseDto {
   String get signedTx => throw _privateConstructorUsedError;
 
+  /// Serializes this MoneygramChallengeSignResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MoneygramChallengeSignResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MoneygramChallengeSignResponseDtoCopyWith<MoneygramChallengeSignResponseDto>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -204,6 +221,8 @@ class _$MoneygramChallengeSignResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MoneygramChallengeSignResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -240,6 +259,8 @@ class __$$MoneygramChallengeSignResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$MoneygramChallengeSignResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MoneygramChallengeSignResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -281,11 +302,13 @@ class _$MoneygramChallengeSignResponseDtoImpl
                 other.signedTx == signedTx));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, signedTx);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MoneygramChallengeSignResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MoneygramChallengeSignResponseDtoImplCopyWith<
@@ -313,8 +336,11 @@ abstract class _MoneygramChallengeSignResponseDto
 
   @override
   String get signedTx;
+
+  /// Create a copy of MoneygramChallengeSignResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MoneygramChallengeSignResponseDtoImplCopyWith<
           _$MoneygramChallengeSignResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -332,8 +358,12 @@ mixin _$SwapToStellarRequestDto {
   String get amount => throw _privateConstructorUsedError;
   int? get priorityFee => throw _privateConstructorUsedError;
 
+  /// Serializes this SwapToStellarRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SwapToStellarRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SwapToStellarRequestDtoCopyWith<SwapToStellarRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -362,6 +392,8 @@ class _$SwapToStellarRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SwapToStellarRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -417,6 +449,8 @@ class __$$SwapToStellarRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$SwapToStellarRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SwapToStellarRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -486,12 +520,14 @@ class _$SwapToStellarRequestDtoImpl implements _SwapToStellarRequestDto {
                 other.priorityFee == priorityFee));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, solanaSenderAddress,
       stellarReceiverAddress, amount, priorityFee);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SwapToStellarRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SwapToStellarRequestDtoImplCopyWith<_$SwapToStellarRequestDtoImpl>
@@ -524,8 +560,11 @@ abstract class _SwapToStellarRequestDto implements SwapToStellarRequestDto {
   String get amount;
   @override
   int? get priorityFee;
+
+  /// Create a copy of SwapToStellarRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SwapToStellarRequestDtoImplCopyWith<_$SwapToStellarRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -541,8 +580,12 @@ mixin _$SwapToSolanaRequestDto {
   String get solanaReceiverAddress => throw _privateConstructorUsedError;
   String get amount => throw _privateConstructorUsedError;
 
+  /// Serializes this SwapToSolanaRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SwapToSolanaRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SwapToSolanaRequestDtoCopyWith<SwapToSolanaRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -570,6 +613,8 @@ class _$SwapToSolanaRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SwapToSolanaRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -619,6 +664,8 @@ class __$$SwapToSolanaRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$SwapToSolanaRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SwapToSolanaRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -678,12 +725,14 @@ class _$SwapToSolanaRequestDtoImpl implements _SwapToSolanaRequestDto {
             (identical(other.amount, amount) || other.amount == amount));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, stellarSenderAddress, solanaReceiverAddress, amount);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SwapToSolanaRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SwapToSolanaRequestDtoImplCopyWith<_$SwapToSolanaRequestDtoImpl>
@@ -713,8 +762,11 @@ abstract class _SwapToSolanaRequestDto implements SwapToSolanaRequestDto {
   String get solanaReceiverAddress;
   @override
   String get amount;
+
+  /// Create a copy of SwapToSolanaRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SwapToSolanaRequestDtoImplCopyWith<_$SwapToSolanaRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -728,8 +780,12 @@ MoneygramSwapResponseDto _$MoneygramSwapResponseDtoFromJson(
 mixin _$MoneygramSwapResponseDto {
   String get encodedTx => throw _privateConstructorUsedError;
 
+  /// Serializes this MoneygramSwapResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MoneygramSwapResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MoneygramSwapResponseDtoCopyWith<MoneygramSwapResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -754,6 +810,8 @@ class _$MoneygramSwapResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MoneygramSwapResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -790,6 +848,8 @@ class __$$MoneygramSwapResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$MoneygramSwapResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MoneygramSwapResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -829,11 +889,13 @@ class _$MoneygramSwapResponseDtoImpl implements _MoneygramSwapResponseDto {
                 other.encodedTx == encodedTx));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, encodedTx);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MoneygramSwapResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MoneygramSwapResponseDtoImplCopyWith<_$MoneygramSwapResponseDtoImpl>
@@ -857,8 +919,11 @@ abstract class _MoneygramSwapResponseDto implements MoneygramSwapResponseDto {
 
   @override
   String get encodedTx;
+
+  /// Create a copy of MoneygramSwapResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MoneygramSwapResponseDtoImplCopyWith<_$MoneygramSwapResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -873,8 +938,12 @@ mixin _$MoneygramFeeRequestDto {
   String get amount => throw _privateConstructorUsedError;
   RampTypeDto get type => throw _privateConstructorUsedError;
 
+  /// Serializes this MoneygramFeeRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MoneygramFeeRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MoneygramFeeRequestDtoCopyWith<MoneygramFeeRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -899,6 +968,8 @@ class _$MoneygramFeeRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MoneygramFeeRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -940,6 +1011,8 @@ class __$$MoneygramFeeRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$MoneygramFeeRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MoneygramFeeRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -987,11 +1060,13 @@ class _$MoneygramFeeRequestDtoImpl implements _MoneygramFeeRequestDto {
             (identical(other.type, type) || other.type == type));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, amount, type);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MoneygramFeeRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MoneygramFeeRequestDtoImplCopyWith<_$MoneygramFeeRequestDtoImpl>
@@ -1018,8 +1093,11 @@ abstract class _MoneygramFeeRequestDto implements MoneygramFeeRequestDto {
   String get amount;
   @override
   RampTypeDto get type;
+
+  /// Create a copy of MoneygramFeeRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MoneygramFeeRequestDtoImplCopyWith<_$MoneygramFeeRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1037,8 +1115,12 @@ mixin _$MoneygramFeeResponseDto {
   String? get gasFeeInUsdc => throw _privateConstructorUsedError;
   int? get priorityFee => throw _privateConstructorUsedError;
 
+  /// Serializes this MoneygramFeeResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MoneygramFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MoneygramFeeResponseDtoCopyWith<MoneygramFeeResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1068,6 +1150,8 @@ class _$MoneygramFeeResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MoneygramFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1129,6 +1213,8 @@ class __$$MoneygramFeeResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$MoneygramFeeResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MoneygramFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1209,12 +1295,14 @@ class _$MoneygramFeeResponseDtoImpl implements _MoneygramFeeResponseDto {
                 other.priorityFee == priorityFee));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, totalAmount, bridgeFee,
       moneygramFee, gasFeeInUsdc, priorityFee);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MoneygramFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MoneygramFeeResponseDtoImplCopyWith<_$MoneygramFeeResponseDtoImpl>
@@ -1250,8 +1338,11 @@ abstract class _MoneygramFeeResponseDto implements MoneygramFeeResponseDto {
   String? get gasFeeInUsdc;
   @override
   int? get priorityFee;
+
+  /// Create a copy of MoneygramFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MoneygramFeeResponseDtoImplCopyWith<_$MoneygramFeeResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1264,8 +1355,12 @@ FundXlmRequestDto _$FundXlmRequestDtoFromJson(Map<String, dynamic> json) {
 mixin _$FundXlmRequestDto {
   String get accountId => throw _privateConstructorUsedError;
 
+  /// Serializes this FundXlmRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of FundXlmRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $FundXlmRequestDtoCopyWith<FundXlmRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1289,6 +1384,8 @@ class _$FundXlmRequestDtoCopyWithImpl<$Res, $Val extends FundXlmRequestDto>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FundXlmRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1322,6 +1419,8 @@ class __$$FundXlmRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$FundXlmRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FundXlmRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1361,11 +1460,13 @@ class _$FundXlmRequestDtoImpl implements _FundXlmRequestDto {
                 other.accountId == accountId));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, accountId);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FundXlmRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FundXlmRequestDtoImplCopyWith<_$FundXlmRequestDtoImpl> get copyWith =>
@@ -1389,8 +1490,11 @@ abstract class _FundXlmRequestDto implements FundXlmRequestDto {
 
   @override
   String get accountId;
+
+  /// Create a copy of FundXlmRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FundXlmRequestDtoImplCopyWith<_$FundXlmRequestDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

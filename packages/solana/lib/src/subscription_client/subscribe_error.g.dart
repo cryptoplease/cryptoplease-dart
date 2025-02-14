@@ -8,7 +8,7 @@ part of 'subscribe_error.dart';
 
 SubscribeError _$SubscribeErrorFromJson(Map<String, dynamic> json) =>
     SubscribeError(
-      code: json['code'] as int,
+      code: (json['code'] as num).toInt(),
       message: json['message'] as String,
     );
 

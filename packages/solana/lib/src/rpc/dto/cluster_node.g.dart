@@ -12,8 +12,8 @@ ClusterNode _$ClusterNodeFromJson(Map<String, dynamic> json) => ClusterNode(
       tpu: json['tpu'] as String?,
       rpc: json['rpc'] as String?,
       version: json['version'] as String?,
-      featureSet: json['featureSet'] as int?,
-      shredVersion: json['shredVersion'] as int?,
+      featureSet: (json['featureSet'] as num?)?.toInt(),
+      shredVersion: (json['shredVersion'] as num?)?.toInt(),
     );
 
 Map<String, dynamic> _$ClusterNodeToJson(ClusterNode instance) =>

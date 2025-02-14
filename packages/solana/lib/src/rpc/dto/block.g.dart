@@ -9,7 +9,7 @@ part of 'block.dart';
 Block _$BlockFromJson(Map<String, dynamic> json) => Block(
       blockhash: json['blockhash'] as String,
       previousBlockhash: json['previousBlockhash'] as String,
-      parentSlot: json['parentSlot'] as int,
+      parentSlot: (json['parentSlot'] as num).toInt(),
       transactions: (json['transactions'] as List<dynamic>)
           .map(Transaction.fromJson)
           .toList(),
@@ -22,8 +22,8 @@ Block _$BlockFromJson(Map<String, dynamic> json) => Block(
       rewards: (json['rewards'] as List<dynamic>)
           .map((e) => Reward.fromJson(e as Map<String, dynamic>))
           .toList(),
-      blockTime: json['blockTime'] as int?,
-      blockHeight: json['blockHeight'] as int?,
+      blockTime: (json['blockTime'] as num?)?.toInt(),
+      blockHeight: (json['blockHeight'] as num?)?.toInt(),
     );
 
 Map<String, dynamic> _$BlockToJson(Block instance) => <String, dynamic>{

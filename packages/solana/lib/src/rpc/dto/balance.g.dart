@@ -9,7 +9,7 @@ part of 'balance.dart';
 BalanceResult _$BalanceResultFromJson(Map<String, dynamic> json) =>
     BalanceResult(
       context: Context.fromJson(json['context'] as Map<String, dynamic>),
-      value: json['value'] as int,
+      value: (json['value'] as num).toInt(),
     );
 
 Map<String, dynamic> _$BalanceResultToJson(BalanceResult instance) =>

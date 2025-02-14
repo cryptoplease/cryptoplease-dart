@@ -13,7 +13,7 @@ dependencies:
   bloc_concurrency: ^0.2.3
   borsh_annotation: ^0.3.1+5
   cached_network_image: ^3.3.1
-  collection: ^1.18.0
+  collection: # Implied by integration_test.
   country_flags: ^3.0.0
   crypto: ^3.0.2
   dart_jsonwebtoken: ^2.14.0

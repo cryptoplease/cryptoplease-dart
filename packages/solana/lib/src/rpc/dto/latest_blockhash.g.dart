@@ -9,7 +9,7 @@ part of 'latest_blockhash.dart';
 LatestBlockhash _$LatestBlockhashFromJson(Map<String, dynamic> json) =>
     LatestBlockhash(
       blockhash: json['blockhash'] as String,
-      lastValidBlockHeight: json['lastValidBlockHeight'] as int,
+      lastValidBlockHeight: (json['lastValidBlockHeight'] as num).toInt(),
     );
 
 Map<String, dynamic> _$LatestBlockhashToJson(LatestBlockhash instance) =>

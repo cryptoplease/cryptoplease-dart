@@ -22,8 +22,12 @@ GasFeeRequestDto _$GasFeeRequestDtoFromJson(Map<String, dynamic> json) {
 mixin _$GasFeeRequestDto {
   String get network => throw _privateConstructorUsedError;
 
+  /// Serializes this GasFeeRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GasFeeRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GasFeeRequestDtoCopyWith<GasFeeRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -47,6 +51,8 @@ class _$GasFeeRequestDtoCopyWithImpl<$Res, $Val extends GasFeeRequestDto>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GasFeeRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +86,8 @@ class __$$GasFeeRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$GasFeeRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GasFeeRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -118,11 +126,13 @@ class _$GasFeeRequestDtoImpl implements _GasFeeRequestDto {
             (identical(other.network, network) || other.network == network));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, network);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GasFeeRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GasFeeRequestDtoImplCopyWith<_$GasFeeRequestDtoImpl> get copyWith =>
@@ -146,8 +156,11 @@ abstract class _GasFeeRequestDto implements GasFeeRequestDto {
 
   @override
   String get network;
+
+  /// Create a copy of GasFeeRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GasFeeRequestDtoImplCopyWith<_$GasFeeRequestDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -164,8 +177,12 @@ mixin _$GasFeeResponseDto {
   String get estimatedBaseFee => throw _privateConstructorUsedError;
   double get networkCongestion => throw _privateConstructorUsedError;
 
+  /// Serializes this GasFeeResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GasFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GasFeeResponseDtoCopyWith<GasFeeResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -198,6 +215,8 @@ class _$GasFeeResponseDtoCopyWithImpl<$Res, $Val extends GasFeeResponseDto>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GasFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -231,6 +250,8 @@ class _$GasFeeResponseDtoCopyWithImpl<$Res, $Val extends GasFeeResponseDto>
     ) as $Val);
   }
 
+  /// Create a copy of GasFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $GasFeeEstimateCopyWith<$Res> get low {
@@ -239,6 +260,8 @@ class _$GasFeeResponseDtoCopyWithImpl<$Res, $Val extends GasFeeResponseDto>
     });
   }
 
+  /// Create a copy of GasFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $GasFeeEstimateCopyWith<$Res> get medium {
@@ -247,6 +270,8 @@ class _$GasFeeResponseDtoCopyWithImpl<$Res, $Val extends GasFeeResponseDto>
     });
   }
 
+  /// Create a copy of GasFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $GasFeeEstimateCopyWith<$Res> get high {
@@ -287,6 +312,8 @@ class __$$GasFeeResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$GasFeeResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GasFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -364,12 +391,14 @@ class _$GasFeeResponseDtoImpl implements _GasFeeResponseDto {
                 other.networkCongestion == networkCongestion));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, low, medium, high, estimatedBaseFee, networkCongestion);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GasFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GasFeeResponseDtoImplCopyWith<_$GasFeeResponseDtoImpl> get copyWith =>
@@ -405,8 +434,11 @@ abstract class _GasFeeResponseDto implements GasFeeResponseDto {
   String get estimatedBaseFee;
   @override
   double get networkCongestion;
+
+  /// Create a copy of GasFeeResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GasFeeResponseDtoImplCopyWith<_$GasFeeResponseDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -423,8 +455,12 @@ mixin _$GasFeeEstimate {
   int get minWaitTimeEstimate => throw _privateConstructorUsedError;
   int get maxWaitTimeEstimate => throw _privateConstructorUsedError;
 
+  /// Serializes this GasFeeEstimate to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GasFeeEstimate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GasFeeEstimateCopyWith<GasFeeEstimate> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -452,6 +488,8 @@ class _$GasFeeEstimateCopyWithImpl<$Res, $Val extends GasFeeEstimate>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GasFeeEstimate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -504,6 +542,8 @@ class __$$GasFeeEstimateImplCopyWithImpl<$Res>
       _$GasFeeEstimateImpl _value, $Res Function(_$GasFeeEstimateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GasFeeEstimate
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -576,12 +616,14 @@ class _$GasFeeEstimateImpl implements _GasFeeEstimate {
                 other.maxWaitTimeEstimate == maxWaitTimeEstimate));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, suggestedMaxPriorityFeePerGas,
       suggestedMaxFeePerGas, minWaitTimeEstimate, maxWaitTimeEstimate);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GasFeeEstimate
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GasFeeEstimateImplCopyWith<_$GasFeeEstimateImpl> get copyWith =>
@@ -614,8 +656,11 @@ abstract class _GasFeeEstimate implements GasFeeEstimate {
   int get minWaitTimeEstimate;
   @override
   int get maxWaitTimeEstimate;
+
+  /// Create a copy of GasFeeEstimate
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GasFeeEstimateImplCopyWith<_$GasFeeEstimateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

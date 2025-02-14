@@ -25,8 +25,12 @@ mixin _$GetFreeNonceResponseDto {
   String get nonceAccount => throw _privateConstructorUsedError;
   String get authority => throw _privateConstructorUsedError;
 
+  /// Serializes this GetFreeNonceResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GetFreeNonceResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GetFreeNonceResponseDtoCopyWith<GetFreeNonceResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -51,6 +55,8 @@ class _$GetFreeNonceResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GetFreeNonceResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -97,6 +103,8 @@ class __$$GetFreeNonceResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$GetFreeNonceResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GetFreeNonceResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -156,11 +164,13 @@ class _$GetFreeNonceResponseDtoImpl implements _GetFreeNonceResponseDto {
                 other.authority == authority));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, nonce, nonceAccount, authority);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GetFreeNonceResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GetFreeNonceResponseDtoImplCopyWith<_$GetFreeNonceResponseDtoImpl>
@@ -190,8 +200,11 @@ abstract class _GetFreeNonceResponseDto implements GetFreeNonceResponseDto {
   String get nonceAccount;
   @override
   String get authority;
+
+  /// Create a copy of GetFreeNonceResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GetFreeNonceResponseDtoImplCopyWith<_$GetFreeNonceResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -205,8 +218,12 @@ SubmitDurableTxRequestDto _$SubmitDurableTxRequestDtoFromJson(
 mixin _$SubmitDurableTxRequestDto {
   String get tx => throw _privateConstructorUsedError;
 
+  /// Serializes this SubmitDurableTxRequestDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubmitDurableTxRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubmitDurableTxRequestDtoCopyWith<SubmitDurableTxRequestDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -231,6 +248,8 @@ class _$SubmitDurableTxRequestDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubmitDurableTxRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -267,6 +286,8 @@ class __$$SubmitDurableTxRequestDtoImplCopyWithImpl<$Res>
       $Res Function(_$SubmitDurableTxRequestDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubmitDurableTxRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -305,11 +326,13 @@ class _$SubmitDurableTxRequestDtoImpl implements _SubmitDurableTxRequestDto {
             (identical(other.tx, tx) || other.tx == tx));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, tx);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubmitDurableTxRequestDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubmitDurableTxRequestDtoImplCopyWith<_$SubmitDurableTxRequestDtoImpl>
@@ -333,8 +356,11 @@ abstract class _SubmitDurableTxRequestDto implements SubmitDurableTxRequestDto {
 
   @override
   String get tx;
+
+  /// Create a copy of SubmitDurableTxRequestDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubmitDurableTxRequestDtoImplCopyWith<_$SubmitDurableTxRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -348,8 +374,12 @@ SubmitDurableTxResponseDto _$SubmitDurableTxResponseDtoFromJson(
 mixin _$SubmitDurableTxResponseDto {
   String get signature => throw _privateConstructorUsedError;
 
+  /// Serializes this SubmitDurableTxResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of SubmitDurableTxResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SubmitDurableTxResponseDtoCopyWith<SubmitDurableTxResponseDto>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -375,6 +405,8 @@ class _$SubmitDurableTxResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SubmitDurableTxResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -411,6 +443,8 @@ class __$$SubmitDurableTxResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$SubmitDurableTxResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SubmitDurableTxResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -451,11 +485,13 @@ class _$SubmitDurableTxResponseDtoImpl implements _SubmitDurableTxResponseDto {
                 other.signature == signature));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, signature);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SubmitDurableTxResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SubmitDurableTxResponseDtoImplCopyWith<_$SubmitDurableTxResponseDtoImpl>
@@ -480,8 +516,11 @@ abstract class _SubmitDurableTxResponseDto
 
   @override
   String get signature;
+
+  /// Create a copy of SubmitDurableTxResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SubmitDurableTxResponseDtoImplCopyWith<_$SubmitDurableTxResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -497,8 +536,12 @@ mixin _$GetDurableFeesResponseDto {
   int get incomingLink => throw _privateConstructorUsedError;
   int get cancelLink => throw _privateConstructorUsedError;
 
+  /// Serializes this GetDurableFeesResponseDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of GetDurableFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $GetDurableFeesResponseDtoCopyWith<GetDurableFeesResponseDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -523,6 +566,8 @@ class _$GetDurableFeesResponseDtoCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of GetDurableFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -569,6 +614,8 @@ class __$$GetDurableFeesResponseDtoImplCopyWithImpl<$Res>
       $Res Function(_$GetDurableFeesResponseDtoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of GetDurableFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -629,12 +676,14 @@ class _$GetDurableFeesResponseDtoImpl implements _GetDurableFeesResponseDto {
                 other.cancelLink == cancelLink));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, outgoingLink, incomingLink, cancelLink);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of GetDurableFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$GetDurableFeesResponseDtoImplCopyWith<_$GetDurableFeesResponseDtoImpl>
@@ -664,8 +713,11 @@ abstract class _GetDurableFeesResponseDto implements GetDurableFeesResponseDto {
   int get incomingLink;
   @override
   int get cancelLink;
+
+  /// Create a copy of GetDurableFeesResponseDto
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$GetDurableFeesResponseDtoImplCopyWith<_$GetDurableFeesResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
