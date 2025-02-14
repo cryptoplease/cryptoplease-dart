@@ -72,11 +72,12 @@ class AnalyticsManager {
       );
 
   void directPaymentSent({
+    required String symbol,
     required Decimal amount,
   }) =>
       _analytics.track(
         'directPaymentSent',
-        properties: {'amount': amount.toDouble()},
+        properties: {'token': symbol, 'amount': amount.toDouble()},
       );
 
   void paymentRequestLinkCreated({

@@ -2,6 +2,7 @@ import '../../../data/db/db.dart';
 import '../../outgoing_direct_payments/data/repository.dart';
 import '../../outgoing_dln_payments/data/repository.dart';
 import '../../outgoing_link_payments/data/repository.dart';
+import '../../token_swap/data/swap_repository.dart';
 import '../../transaction_request/models/transaction_request.dart';
 import '../models/activity.dart';
 
@@ -41,5 +42,13 @@ extension TransactionRequestPaymentExt on TransactionRequestPayment {
         id: id,
         created: created,
         data: this,
+      );
+}
+
+extension TokenSwapRowToActivityExt on TokenSwapRow {
+  Future<Activity> toActivity() async => Activity.swap(
+        id: id,
+        created: created,
+        data: await toModel(),
       );
 }

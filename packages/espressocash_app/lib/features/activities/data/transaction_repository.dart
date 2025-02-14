@@ -16,6 +16,7 @@ import '../../currency/models/currency.dart';
 import '../../outgoing_direct_payments/data/repository.dart';
 import '../../outgoing_link_payments/data/repository.dart';
 import '../../payment_request/data/repository.dart';
+import '../../token_swap/data/swap_repository.dart';
 import '../../tokens/data/token_repository.dart';
 import '../../tokens/token.dart';
 import '../../transaction_request/service/tr_service.dart';
@@ -176,8 +177,14 @@ class TransactionRepository {
       ignoreWhen: (row) => row.status != TRStatusDto.success,
     );
 
+    final swap = _db.tokenSwapRows.findActivityOrNull(
+      where: (row) => row.tx.equals(tx.encode()),
+      builder: (pr) => pr.toActivity(),
+      ignoreWhen: (row) => row.status != SwapStatusDto.success,
+    );
+
     return Rx.combineLatest(
-      [pr, odp, olp, offRamp, onRamp, oDlnP, tr]
+      [pr, odp, olp, offRamp, onRamp, oDlnP, tr, swap]
           .map((it) => it.onErrorReturn(null)),
       (values) => values.whereNotNull().first,
     );

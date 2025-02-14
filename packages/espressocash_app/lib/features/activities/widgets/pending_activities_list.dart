@@ -14,6 +14,7 @@ import 'olp_tile.dart';
 import 'on_ramp_tile.dart';
 import 'outgoing_dln_tile.dart';
 import 'payment_request_tile.dart';
+import 'swap_tile.dart';
 import 'tr_tile.dart';
 
 class PendingActivitiesList extends StatefulWidget {
@@ -112,6 +113,10 @@ class _PendingActivitiesListState extends State<PendingActivitiesList> {
                               activity: it,
                             ),
                             kyc: (it) => const SizedBox.shrink(),
+                            swap: (it) => SwapTile(
+                              key: ValueKey(it.id),
+                              activity: it,
+                            ),
                           );
                         },
                       ),

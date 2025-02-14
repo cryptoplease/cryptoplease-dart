@@ -82,6 +82,8 @@
     "@faq": {},
     "fee": "Fee",
     "@fee": {},
+    "fees": "Fees",
+    "@fees": {},
     "feesCalculating": "calculating...",
     "@feesCalculating": {},
     "feesFailed": "failed to load",
@@ -1225,5 +1227,50 @@
     "balance": "Balance",
     "@balance": {},
     "noRecentActivity": "No recent activity",
-    "@noRecentActivity": {}
+    "@noRecentActivity": {},
+    "quantity": "Quantity",
+    "@quantity": {},
+    "recipient": "Recipient",
+    "@recipient": {},
+    "enterWalletAddress": "Enter a wallet address",
+    "@enterWalletAddress": {},
+    "swap": "Swap",
+    "@swap": {},
+    "reviewSwap": "Review Swap",
+    "@reviewSwap": {},
+    "youPay": "You Pay",
+    "@youPay": {},
+    "youReceive": "You Receive",
+    "@youReceive": {},
+    "provider": "Provider",
+    "@provider": {},
+    "bestPrice": "Best Price",
+    "@bestPrice": {},
+    "slippage": "Slippage",
+    "@slippage": {},
+    "priceImpact": "Price Impact",
+    "@priceImpact": {},
+    "espressoCashFee": "{percent}% Espresso Cash fee included",
+    "@espressoCashFee": {
+      "placeholders": {
+        "percent": {
+          "type": "double"
+        }
+      }
+    },
+    "clear": "Clear",
+    "@clear": {},
+    "max": "Max",
+    "@max": {},
+    "swapSuccess": "Successfully swapped {from} to {to}",
+    "@swapSuccess": {
+      "placeholders": {
+        "from": {"type": "String"},
+        "to": {"type": "String"}
+      }
+    },
+    "swap_lblCancelConfirmationTitle": "Cancel Swap",
+    "@swap_lblCancelConfirmationTitle": {},
+    "swap_lblCancelConfirmationSubtitle": "Are you sure you want to cancel this swap?",
+    "@swap_lblCancelConfirmationSubtitle": {}
 }

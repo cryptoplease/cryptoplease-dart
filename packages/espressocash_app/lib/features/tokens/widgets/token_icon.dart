@@ -49,6 +49,7 @@ class _TokenIconImage extends StatelessWidget {
           errorWidget: (BuildContext context, String url, dynamic error) =>
               const _DefaultIcon(),
           imageUrl: url,
+          errorListener: (_) {},
           imageBuilder: (context, provider) => DecoratedBox(
             decoration: BoxDecoration(
               shape: BoxShape.circle,

@@ -10,21 +10,34 @@ import '../../tokens/token.dart';
 import '../../tokens/widgets/token_icon.dart';
 
 class TokenAppBar extends StatelessWidget {
-  const TokenAppBar({super.key, required this.token});
+  const TokenAppBar({
+    super.key,
+    required this.token,
+    this.color = CpColors.darkSandColor,
+    this.displayText = true,
+  });
 
   final Token token;
+  final Color color;
+  final bool displayText;
 
   @override
   Widget build(BuildContext context) => SliverPersistentHeader(
         pinned: true,
-        delegate: _TokenAppBarDelegate(token),
+        delegate: _TokenAppBarDelegate(token, color, displayText: displayText),
       );
 }
 
 class _TokenAppBarDelegate extends SliverPersistentHeaderDelegate {
-  const _TokenAppBarDelegate(this.token);
+  const _TokenAppBarDelegate(
+    this.token,
+    this.color, {
+    required this.displayText,
+  });
 
   final Token token;
+  final Color color;
+  final bool displayText;
 
   @override
   Widget build(
@@ -39,13 +52,13 @@ class _TokenAppBarDelegate extends SliverPersistentHeaderDelegate {
     final iconSize = max(_tokenSize * ratio, 24.0);
 
     return Material(
-      color: CpColors.darkSandColor,
+      color: color,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Stack(
           children: [
             _buildIcon(ratio, iconSize),
-            _buildText(ratio, iconSize),
+            if (displayText) _buildText(ratio, iconSize),
             const _BackButton(),
           ],
         ),

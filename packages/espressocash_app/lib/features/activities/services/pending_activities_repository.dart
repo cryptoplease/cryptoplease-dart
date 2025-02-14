@@ -11,6 +11,7 @@ import '../../outgoing_link_payments/data/repository.dart';
 import '../../payment_request/data/repository.dart';
 import '../../ramp/services/off_ramp_order_service.dart';
 import '../../ramp/services/on_ramp_order_service.dart';
+import '../../token_swap/data/swap_repository.dart';
 import '../../transaction_request/service/tr_service.dart';
 import '../data/activity_builder.dart';
 import '../models/activity.dart';
@@ -23,6 +24,7 @@ class PendingActivitiesRepository {
     this._offRampOrderService,
     this._trService,
     this._pendingKycService,
+    this._swapRepository,
   );
 
   final MyDatabase _db;
@@ -30,6 +32,7 @@ class PendingActivitiesRepository {
   final OffRampOrderService _offRampOrderService;
   final TRService _trService;
   final PendingKycService _pendingKycService;
+  final SwapRepository _swapRepository;
 
   Stream<IList<Activity>> watchAll() {
     final opr = _db.select(_db.paymentRequestRows)
@@ -81,6 +84,12 @@ class PendingActivitiesRepository {
           date == null ? const <Activity>[] : [Activity.kyc(created: date)],
     );
 
+    final swapStream = _swapRepository.watchAllPending().map(
+          (rows) => rows.map(
+            (it) => Activity.swap(id: it.id, created: it.created, data: it),
+          ),
+        );
+
     return Rx.combineLatest<Iterable<Activity>, IList<Activity>>(
       [
         oprStream,
@@ -91,6 +100,7 @@ class PendingActivitiesRepository {
         offRampStream,
         trStream,
         pendingKycStream,
+        swapStream,
       ],
       (values) => values.expand(identity).toIList().sortOrdered((a, b) {
         if (a is KycActivity) return -1;
